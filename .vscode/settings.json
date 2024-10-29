@@ -1,0 +1,18 @@
+{
+    "java.project.sourcePaths": [
+        "."
+    ],
+    "java.project.referencedLibraries": [
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\xmlbeans-2.3.0.jar",
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\commons-codec-1.5.jar",
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\poi-3.8-beta4.jar",
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\org.json-chargebee-1.0.jar",
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\json-20210307.jar",
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\poi-ooxml-3.5-beta5.jar",
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\dom4j-1.6.jar",
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\log4j-1.2.17.jar",
+        "c:\\Users\\bhush\\Downloads\\Jar\\Jar\\poi-ooxml-schemas-3.9.jar",
+        "c:\\Users\\bhush\\Downloads\\jfreechart-1.5.3.jar",
+        "c:\\Users\\bhush\\Downloads\\poi-5.2.2.jar"
+    ]
+}

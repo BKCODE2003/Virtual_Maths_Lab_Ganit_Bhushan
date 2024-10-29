@@ -1,0 +1,272 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "VLab_0304060402_108_1_Assign28_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060402_108_1_Assign28_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "SpeedDistanceQuestionGenerator",
+            "request": "launch",
+            "mainClass": "SpeedDistanceQuestionGenerator",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "CarImage",
+            "request": "launch",
+            "mainClass": "CarImage",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_03040301_101_1_Assign25_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_03040301_101_1_Assign25_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "WatermelonQuestionGeneratorOptimized",
+            "request": "launch",
+            "mainClass": "WatermelonQuestionGeneratorOptimized",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "newWatermelon",
+            "request": "launch",
+            "mainClass": "newWatermelon",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "org.example.Main",
+            "projectName": "ganitt"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "WatermelonQuestionGenerator",
+            "request": "launch",
+            "mainClass": "WatermelonQuestionGenerator",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_111_1_Assign19_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_111_1_Assign19_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_110_1_Assign18_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_110_1_Assign18_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_109_1_Assign17_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_109_1_Assign17_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "LineEquation",
+            "request": "launch",
+            "mainClass": "LineEquation",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_107_2_Assign15_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_107_2_Assign15_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "JAVA.src.App",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "LineGraphImage",
+            "request": "launch",
+            "mainClass": "LineGraphImage",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "PlotDemo",
+            "request": "launch",
+            "mainClass": "PlotDemo",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_030402_113_Assign1_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_030402_113_Assign1_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_030402_124_Assign2_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_030402_124_Assign2_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_030402_126_Assign3_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_030402_126_Assign3_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_03040301_105_Assign4_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_03040301_105_Assign4_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_03040301_133_Assign5_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_03040301_133_Assign5_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_03040301_136_Assign6_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_03040301_136_Assign6_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_03040303_125_Assign7_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_03040303_125_Assign7_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_0304060403_104_Assign12_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_0304060403_104_Assign12_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VESIT_304060402_105_Assign8_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_304060402_105_Assign8_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_101_1_Assign9_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_101_1_Assign9_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_102_1_Assign10_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_102_1_Assign10_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_103_1_Assign11_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_103_1_Assign11_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_104_1_Assign12_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_104_1_Assign12_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_105_1_Assign13_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_105_1_Assign13_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_106_2_Assign14_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_106_2_Assign14_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "VLab_0304060403_108_1_Assign16_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_108_1_Assign16_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        }
+    ]
+}
