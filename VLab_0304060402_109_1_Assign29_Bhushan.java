@@ -1,10 +1,7 @@
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-
-
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -48,39 +45,46 @@ public class VLab_0304060402_109_1_Assign29_Bhushan {
 			row.createCell(2).setCellValue(1);
 			row.createCell(3).setCellValue("0304060402");
 
-			
-			
+			String ename[] = {"Abhinav","Harsh","Adarsh","Shaym","Rajveer","Amit","Rajvardhan","Ashok","Omkar","Kunal","Arya","Swati","Radha","Prachi","Aditi","Akshara","Kavyaa","Swara","Sharayu","sayali"};
+			String mname[]= {"अभिनव","हर्ष","आदर्श","श्याम","राजवीर","अमित","राजवर्धन","अशोक","ओंकार","कुणाल","आर्या","स्वाती","राधा","प्राची","अदिती","अक्षरा","काव्या","स्वरा","शरयू","सायली"};
 			
 			int a=(int)(Math.random()*20); 
 			
-			int b=(int)(Math.random()*20+2);
+			int attempted=(int)(Math.random()*91+10); 
+			
+			int correct_attempt=(int)(Math.random()*(attempted+1));
 
-			int c=(int)(Math.random()*20+2);
+			int wrong_attempt=attempted-correct_attempt;
 
+			int score=correct_attempt*2-wrong_attempt;
 
 			String Correct_ans,wrong_ans,wrong_ans1,wrong_ans2,Que,Que1,Sol,Sol1;
 			
-			Que="In a competitive examination, there were $100$ questions. The correct answer would carry $2$ marks, and for incorrect answers $1$ mark would be deducted, and $0$ mark for not attempted questions. Yashwant had attempted $94$ questions and he got a total $158$ marks. Then how many questions did he get wrong?<br>";
-			Que1="#एका स्पर्धा परीक्षेत $100$ प्रश्न होते. बरोबर उत्तराला $2$ गुण, तर प्रत्येक चूक उत्तरासाठी $1$ गुण वजा होतो, आणि न सोडविलेल्या प्रश्नाला $0$ गुण दिले जातात. यशवंतने त्या परीक्षेत $94$ प्रश्न सोडविले आणि त्याला एकूण $158$ गुण मिळाले. तर त्याने किती प्रश्न चूक सोडविले? ";
+			Que="In a competitive examination, there were $100$ questions. The correct answer would carry $2$ marks, and for incorrect answers $1$ mark would be deducted, and $0$ mark for not attempted questions. "+ename[a]+" had attempted $"+attempted+"$ questions and "+(a>9 ? "she":"he")+" got a total $"+score+"$ marks. Then how many questions did "+(a>9 ? "she":"he")+" get wrong? <br> ";
+			Que1="#एका स्पर्धा परीक्षेत $100$ प्रश्न होते. बरोबर उत्तराला $2$ गुण, तर प्रत्येक चूक उत्तरासाठी $1$ गुण वजा होतो, आणि न सोडविलेल्या प्रश्नाला $0$ गुण दिले जातात. "+mname[a]+"ने त्या परीक्षेत $"+attempted+"$ प्रश्न सोडविले आणि "+(a>9 ? "तिला":"त्याला")+" एकूण $"+score+"$ गुण मिळाले. तर "+(a>9 ? "तिने":"त्याने")+" किती प्रश्न चूक सोडविले? <br> ";
 
-			Sol="Ans: $10$ <br> Let us assume that Yashwant got $x$ questions correct and $y$ questions wrong. From the given information, we get<br> $x+y=94. . . . (i)$, and $2x-y=158. . . . (ii)$<br> From $(i)$ we get $x=94-y$<br>Substituting this value of $x$ in $(ii)$, we get <br> $2(94-y)-y=158$<br>$ \therefore y= 10 =$ no. of wrong answers given by Yashwant.<br>";
-			Sol1="#उत्तर: $10$ <br> यशवंतने $x$ प्रश्न बरोबर सोडवले आणि $y$ प्रश्न चूक सोडवले असे मानू . दिलेल्या माहितीनुसार आपल्याला <br > $x+y=94. . . . (i)$, आणि $2x-y=158. . . . (ii)$ अशी समीकरणे मिळतात <br> आता समीकरण $(i)$ वरून $x=94-y$ मिळते <br>ही  $x$ ची किंमत आपण $(ii)$ मध्ये ठेऊन आपल्याला<br> $2(94-y)-y=158$<br>$ \therefore y= 10 =$ चूक सोडविलेल्या प्रश्नांची संख्या हे उत्तर मिळते. ";
+			Sol="Ans: $"+wrong_attempt+"$ <br> Let us assume that "+ename[a]+" got $x$ questions correct and $y$ questions wrong. From the given information, we get<br> $x+y="+attempted+". . . . (i)$, and $2x-y="+score+". . . . (ii)$<br> From $(i)$ we get $x="+attempted+"-y$ <br> Substituting this value of $x$ in $(ii)$, we get <br> $2("+attempted+"-y)-y="+score+"$ <br> $ \\therefore y= "+wrong_attempt+" =$ no. of wrong answers given by "+ename[a]+". <br> ";
+			Sol1="#उत्तर: $"+wrong_attempt+"$ <br> "+mname[a]+"ने $x$ प्रश्न बरोबर सोडवले आणि $y$ प्रश्न चूक सोडवले असे मानू. दिलेल्या माहितीनुसार आपल्याला <br> $x+y="+attempted+". . . . (i)$ , आणि $2x-y="+score+". . . . (ii)$ अशी समीकरणे मिळतात <br> आता समीकरण $(i)$ वरून $x="+attempted+"-y$ मिळते <br> ही  $x$ ची किंमत आपण $(ii)$ मध्ये ठेऊन आपल्याला <br> $2("+attempted+"-y)-y="+score+"$ <br> $ \\therefore y= "+wrong_attempt+" =$ चूक सोडविलेल्या प्रश्नांची संख्या हे उत्तर मिळते. <br> ";
 			
 
 			
 			String Solution = ""+Sol+" "+Sol1+"";
 			String Question =""+Que+" "+Que1+"";
 			
-			Correct_ans="$"+(b+c)+"$ "+pluralFruits[a]+" <br> # $"+(b+c)+"$ "+fruitsMarathiPlural[a]+" <br> ";
-			wrong_ans="$"+(b+c+1)+"$ "+pluralFruits[a]+" <br> # $"+(b+c+1)+"$ "+fruitsMarathiPlural[a]+" <br> ";
-			int num=2;
-			do{
-			wrong_ans1="$"+(c+num)+"$ "+pluralFruits[a]+" <br> # $"+(b+c-2)+"$ "+fruitsMarathiPlural[a]+" <br> ";
-			// System.out.println(num);
-			num++;
-			}while((c+num-1)==b || (c+num-1)==(b+c+1) ||(c+num-1)==(b+c));
-
-			wrong_ans2="$"+(b)+"$ "+pluralFruits[a]+" <br> # $"+(b)+"$ "+fruitsMarathiPlural[a]+" <br> ";
+			Correct_ans="$"+wrong_attempt+"$ <br> ";
+			wrong_ans="$"+correct_attempt+"$ <br> ";
+			if(wrong_attempt==correct_attempt){
+				wrong_ans="$"+(correct_attempt+1)+"$ <br> ";
+			}
+			wrong_ans2="$"+(attempted)+"$ <br> ";
+			wrong_ans1="$"+(wrong_attempt+2)+"$ <br> ";
+			int k=2;
+			while(wrong_ans1==wrong_ans || wrong_ans1==Correct_ans || wrong_ans1==wrong_ans2){
+				wrong_ans1="$"+(wrong_attempt+k)+"$ <br> ";
+				k++;
+			}
+			wrong_ans2="$"+(attempted)+"$ <br> ";
+			
 
 			row.createCell(4).setCellValue(Question);
 			row.createCell(5).setCellValue(Correct_ans);
@@ -102,7 +106,7 @@ public class VLab_0304060402_109_1_Assign29_Bhushan {
 			row.createCell(18).setCellValue(109);
 
 				
-			String Checker =""+Solution+""+Correct_ans+""+wrong_ans+""+wrong_ans1+""+wrong_ans2+""+Question+"";
+			String Checker =""+correct_attempt+""+wrong_attempt+""+attempted+""+score+"";
 			mapsize = map.size();
 			map.put(Checker,i);
 			mapsizeafter = map.size();
