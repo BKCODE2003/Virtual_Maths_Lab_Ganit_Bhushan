@@ -51,8 +51,8 @@ public class VLab_03040301_101_1_Assign25_Bhushan {
 			String pluralFruits[] = {
 				"mangoes", "apples", "oranges", "grapes", "guavas", "pomegranates", 
 				"custard apples", "bananas", "papayas", "pineapples", "strawberries", 
-				"watermelons","Jamun" ,"blueberries", "raspberries", "pears", 
-				"cherries", "peaches", "kiwis", "plums"
+				"watermelons","Jamun", "raspberries", "pears", 
+				"cherries", "kiwis", "plums"
 			};
 
 			String singularFruits[] = {
