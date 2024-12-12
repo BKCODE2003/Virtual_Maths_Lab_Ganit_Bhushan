@@ -82,13 +82,14 @@ public class CarImage {
             carASpace + 160, 130, // Right end of Car A
             carBSpace - 20, 130 // Left end of Car B
         ));
-        g.drawString("Point A", 40, 40);
-        g.drawString("Point B", 540, 40);
+        g.drawString("Car A : First Car        Car B : Second Car", 250, 30);
+        g.drawString(" A ", 160, 150);
+        g.drawString(" B ", 500, 150);
         // Draw Car B
-        drawCar(g, carBSpace, 60, carBImageRight, carBName, carBSpeed, "Right");
+        drawCar(g, carBSpace+10, 60, carBImageRight, carBName, carBSpeed, "Right");
 
         // Distance text below the line
-        g.drawString("Distance(A-B): " + distanceBetweenCars + " Kms", carASpace + (carBSpace - carASpace) / 2, 150);
+        g.drawString("Distance AB: " + distanceBetweenCars + " Kms", carASpace + (carBSpace - carASpace) / 2, 150);
     }
 
     private void drawLowerPart(Graphics g) {
@@ -105,7 +106,7 @@ public class CarImage {
         // Draw lower Car A
         drawCar(g, lowerCarASpace, 250, carAImageRight, carAName, carASpeed, "Right");
         // Draw lower Car B
-        drawCar(g, lowerCarBSpace, 260, carBImageLeft, carBName, carBSpeed, "Left");
+        drawCar(g, lowerCarBSpace+10, 260, carBImageLeft, carBName, carBSpeed, "Left");
 
         // Draw connecting line centered between the cars
         Graphics2D g2d = (Graphics2D) g;
@@ -124,14 +125,14 @@ public class CarImage {
             400, 310 // Left end of lower Car B
         ));
 
-        g.drawString("Point A", 40, 240);
-        g.drawString("Point B", 540, 240);
+        g.drawString(" A ", 160, 340);
+        g.drawString(" B ", 500, 340);
 
         g.drawString("Car A (After " + afterTime + "hr)", 210, 235);
         g.drawString("Car B (After " + afterTime + "hr)", 390, 235);
 
         g.drawString(" <---- " + afterTimeDis + " Kms ----> ", 300, 275);
-        g.drawString("Distance(A-B): " + distanceBetweenCars + " Kms", lowerCarASpace + (lowerCarBSpace - lowerCarASpace) / 2, 340);
+        g.drawString("Distance AB: " + distanceBetweenCars + " Kms", lowerCarASpace + (lowerCarBSpace - lowerCarASpace) / 2, 340);
     }
 
     private void drawCar(Graphics g, int x, int y, Image carImage, String carName, int speed, String direction) {
@@ -149,10 +150,10 @@ public class CarImage {
         g.drawString("Direction: " + direction, x, labelY + 15);
     }
 
-    // public static void main(String[] args) {
-    //     // Example usage with parameters
-    //     CarImage carImage = new CarImage();
-    //     carImage.draw_sol_img(60, 80, 80, 1, 30, "CarImage.png"); // Specify the path where you want to save the image
+    public static void main(String[] args) {
+        // Example usage with parameters
+        CarImage carImage = new CarImage();
+        carImage.draw_sol_img(60, 80, 80, 1, 30, "CarImage.png"); // Specify the path where you want to save the image
    
-    // }
+    }
 }

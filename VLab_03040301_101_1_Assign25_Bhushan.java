@@ -1,7 +1,6 @@
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
 
 
@@ -94,6 +93,17 @@ public class VLab_03040301_101_1_Assign25_Bhushan {
 
 			int c=(int)(Math.random()*20+2);
 
+			String verb="सांगितली";
+
+			if(a==0||a==4 ||a==9){
+				verb="सांगितले";
+			}
+			else if(a==8||a==10){
+				verb="सांगितल्या";
+			}
+			else{
+				verb="सांगितली";
+			}
 
 			String Correct_ans,wrong_ans,wrong_ans1,wrong_ans2,Que,Que1,Sol,Sol1;
 			
@@ -101,7 +111,7 @@ public class VLab_03040301_101_1_Assign25_Bhushan {
 			Que1="# $"+b+"$ "+fruitsMarathiPlural[a]+" + $"+c+"$ "+fruitsMarathiPlural[a]+" = ? <br>";
 
 			Sol="Ans: $"+(b+c)+"$ "+pluralFruits[a]+"<br>Since it is asked to add "+singularFruits[a]+" in "+pluralFruits[a]+", and they are same type of fruits, we can add them as follows<br> $"+b+"$ "+pluralFruits[a]+" + $"+c+"$ "+pluralFruits[a]+"<br> $ = ("+b+" + "+c+")$ "+pluralFruits[a]+" . . . . by adding numbers $"+b+"$ and $"+c+"$ to get $"+(b+c)+"$ <br>$ = "+(b+c)+"$ "+pluralFruits[a]+" . . . write "+pluralFruits[a]+" with this number as $"+(b+c)+"$ "+pluralFruits[a]+".<br> $ \\therefore "+(b+c)+"$ "+pluralFruits[a]+" is the answer.<br> ";
-			Sol1="# उत्तर : $"+(b+c)+"$ "+fruitsMarathiPlural[a]+"<br> आपल्याला "+multifruitsMarathi[a]+" मिळवायला सांगितले आहेत. मिळवायची दोन्ही फळे एकाच प्रकारची आहेत. म्हणून आपण त्यांची बेरीज खाली दाखविल्या प्रमाणे करू शकतो. <br> $"+b+"$ "+fruitsMarathiPlural[a]+" + $"+c+"$ "+fruitsMarathiPlural[a]+" <br>$ = ("+b+" + "+c+")$ "+fruitsMarathiPlural[a]+" . . . . $"+b+"$ आणि $"+c+"$ या संख्यांची बेरीज करून $"+(b+c)+"$ मिळाले <br>$ = "+(b+c)+"$ "+fruitsMarathiPlural[a]+" . . . . $"+(b+c)+"$ पुढे "+fruitsMarathiPlural[a]+" लिहून <br> $ \\therefore "+(b+c)+" $ "+fruitsMarathiPlural[a]+" हे उत्तर मिळते.<br> ";
+			Sol1="# उत्तर : $"+(b+c)+"$ "+fruitsMarathiPlural[a]+"<br> आपल्याला "+multifruitsMarathi[a]+" मिळवायला "+verb+" आहेत. मिळवायची दोन्ही फळे एकाच प्रकारची आहेत. म्हणून आपण त्यांची बेरीज खाली दाखविल्या प्रमाणे करू शकतो. <br> $"+b+"$ "+fruitsMarathiPlural[a]+" + $"+c+"$ "+fruitsMarathiPlural[a]+" <br>$ = ("+b+" + "+c+")$ "+fruitsMarathiPlural[a]+" . . . . $"+b+"$ आणि $"+c+"$ या संख्यांची बेरीज करून $"+(b+c)+"$ मिळाले <br>$ = "+(b+c)+"$ "+fruitsMarathiPlural[a]+" . . . . $"+(b+c)+"$ पुढे "+fruitsMarathiPlural[a]+" लिहून <br> $ \\therefore "+(b+c)+" $ "+fruitsMarathiPlural[a]+" हे उत्तर मिळते.<br> ";
 			
 
 			

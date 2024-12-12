@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VLab_0304060402_108_1_Assign28_Bhushan_Test",
+            "request": "launch",
+            "mainClass": "VLab_0304060402_108_1_Assign28_Bhushan_Test",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
             "name": "VESIT_3040302_137_Assign10_Sairam",
             "request": "launch",
             "mainClass": "VESIT_3040302_137_Assign10_Sairam",
