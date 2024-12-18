@@ -76,7 +76,7 @@ public class VLab_0304060402_109_1_Assign29_Bhushan {
 			wrong_ans="";
 			wrong_ans1="";
 			wrong_ans2="";
-			int marks_system=(int)(Math.random()*10);
+			int marks_system=(int)(Math.random()*9);
 			
 			switch (marks_system) {
 				case 0:
@@ -142,13 +142,6 @@ public class VLab_0304060402_109_1_Assign29_Bhushan {
 					wrong_ans1="Correct answer $1$ marks and wrong answer $-2$ marks. <br> #बरोबर उत्तर $1$ गुण आणि चूक उत्तर $-2$ गुण. <br> ";
 					wrong_ans2="Correct answer $3$ marks and wrong answer $-1$ marks. <br> #बरोबर उत्तर $3$ गुण आणि चूक उत्तर $-1$ गुण. <br> ";
 					break;
-				case 9:
-					pos_marks=1;
-					neg_marks=-1;	
-					wrong_ans="Correct answer $5$ marks and wrong answer $-3$ marks. <br> #बरोबर उत्तर $5$ गुण आणि चूक उत्तर $-3$ गुण. <br> ";
-					wrong_ans1="Correct answer $1$ marks and wrong answer $-2$ marks. <br> #बरोबर उत्तर $1$ गुण आणि चूक उत्तर $-2$ गुण. <br> ";
-					wrong_ans2="Correct answer $3$ marks and wrong answer $-3$ marks. <br> #बरोबर उत्तर $3$ गुण आणि चूक उत्तर $-3$ गुण. <br> ";
-					break;
 				default:
 					break;
 			}
@@ -172,7 +165,7 @@ public class VLab_0304060402_109_1_Assign29_Bhushan {
                         "$"+correct_attempt+"x+"+wrong_attempt+"y="+score+" . . . . . (i)$ <br>" + //
                         "and "+ename[b]+" answered $"+correct_attempt1+"$ correct and $"+wrong_attempt1+"$  wrong answers, "+(a>9 ? "her":"his")+" score can be written as <br>" + //
                         "$"+correct_attempt1+"x+"+wrong_attempt1+"y="+score1+" . . . . . (ii)$ <br>" + //
-                        "Since unattempted answers to not contribute (same as carrying $0$ marks), we will not worry about the number of unanswered questions. <br>" + //
+                        "Since unattempted answers do not contribute (same as carrying $0$ marks), we will not worry about the number of unanswered questions. <br>" + //
                         "From equation $(i)$ we get the value of $x$ in terms of $y$ as <br>" + //
                         "$x= \\dfrac {"+score+"-"+wrong_attempt+"y}{"+correct_attempt+"}$ <br>" + //
                         "Substituting this value of $x$ in equation $(ii)$ we get, <br>" + //
@@ -185,7 +178,7 @@ public class VLab_0304060402_109_1_Assign29_Bhushan {
                         "$"+correct_attempt+"x+\\{"+wrong_attempt+" \\times ("+term3+")\\}= "+score+"$ <br>" + //
                         "$\\therefore "+correct_attempt+"x= "+score+"+"+((-1)*(wrong_attempt)*term3)+"="+((score)+((-1)*(wrong_attempt)*term3))+"$  . . . .  by simplyfying <br>" + //
                         "$\\therefore x="+(((score)+((-1)*(wrong_attempt)*term3))/correct_attempt)+"$ which gives the marks for correct answer. <br>" + //
-                        "Thus correct answer carries $"+pos_marks+"$ marks and wrong answer carries $"+neg_marks+"$ mark is the answer. <br> ";
+                        "Thus correct answer carries $"+pos_marks+"$ "+(pos_marks==1 || pos_marks==-1? "mark":"marks")+" and wrong answer carries $"+neg_marks+"$ "+(pos_marks==1 || pos_marks==-1? "mark":"marks")+" is the answer. <br> ";
     
 			Sol1="उत्तर : बरोबर उत्तर $"+pos_marks+"$ गुण आणि चूक उत्तर $"+neg_marks+"$ गुण. <br> " + //
                         "आपण बरोबर उत्तरासाठी $x$ गुण आणि चूक उत्तरासाठी $y$ गुण मिळतील असे मानू. <br>" + //
@@ -193,7 +186,7 @@ public class VLab_0304060402_109_1_Assign29_Bhushan {
                         "$"+correct_attempt+"x+"+wrong_attempt+"y="+score+" . . . . . (i)$ असे असतील. <br>" + //
                         "आणि "+mname[b]+"ने $"+correct_attempt1+"$ उत्तरे बरोबर आणि $"+wrong_attempt1+"$ उत्तरे चूक आहेत, म्हणून "+(a>9 ? "तिला":"त्याला")+" मिळालेले एकूण गुण <br>" + //
                         "$"+correct_attempt1+"x+"+wrong_attempt1+"y="+score1+" . . . . . (ii)$ असे असतील. <br>" + //
-                        "उत्तर न दिलेले प्रश्न विचारात घेतले नाहीत म्हणजेच त्यांना प्रत्येक $0$ गुण आहेत. <br>" + //
+                        "उत्तर न दिलेले प्रश्न विचारात घेतले नाहीत कारण त्यांना प्रत्येक $0$ गुण आहेत. <br>" + //
                         "समीकरण $(i)$ वरून आपण $x$ ची किंमत $y$ च्या रूपात <br>" + //
                         "$x= \\dfrac {"+score+"-"+wrong_attempt+"y}{"+correct_attempt+"}$ अशी लिहू शकतो. <br>" + //
                         "$x$ ची ही किंमत समीकरण $(ii)$ मध्ये ठेवून आपल्याला,<br>" + //
@@ -201,7 +194,7 @@ public class VLab_0304060402_109_1_Assign29_Bhushan {
                         "$\\dfrac {"+(correct_attempt1*score)+"-"+(correct_attempt1*wrong_attempt)+"y}{"+correct_attempt+"}+"+wrong_attempt1+"y="+score1+"$ <br>" + //
                         "$\\therefore "+(correct_attempt1*score)+"-"+(correct_attempt1*wrong_attempt)+"y+"+(wrong_attempt1*correct_attempt)+"y= "+(correct_attempt*score1)+"$ . . . .  सोडवून आणि सरळ रूप देऊन <br>" + //
                         "$\\therefore "+term1+"y = "+term2+"$ <br>" + //
-                        "$\\therefore y="+(term3)+"$ हे चूक उत्तरासाठी असलेले गुण आहेत. ( म्हणजे चूक उत्तरासाठी $"+(-1)*(term3)+"$ गुण वजा होतो. )<br>" + //
+                        "$\\therefore y="+(term3)+"$ हे चूक उत्तरासाठी असलेले गुण आहेत. ( म्हणजे चूक उत्तरासाठी $"+(-1)*(term3)+"$ गुण वजा "+((marks_system==2||marks_system==5||marks_system==7||marks_system==8) ? "होतो":"होतात")+". )<br>" + //
                         "$y$ ची ही किंमत समीकरण $(i)$ ठेवून आपल्याला <br>" + //
                         "$"+correct_attempt+"x+\\{"+wrong_attempt+" \\times ("+term3+")\\}= "+score+"$ असे मिळते. <br>" + //
                         "$\\therefore "+correct_attempt+"x= "+score+"+"+((-1)*(wrong_attempt)*term3)+"="+((score)+((-1)*(wrong_attempt)*term3))+"$ . . . . . सोडवून आणि सरळ रूप देऊन <br>" + //
