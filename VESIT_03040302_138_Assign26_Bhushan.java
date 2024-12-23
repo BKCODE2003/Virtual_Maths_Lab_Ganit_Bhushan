@@ -445,8 +445,8 @@ public class VESIT_03040302_138_Assign26_Bhushan {
 		//				  row.createCell(14).setCellValue(" ");
 					row.createCell(15).setCellValue("2022.bhushan.kor@ves.ac.in");
 				
-					Solu="Ans : None of the given <br> In vertical arrangement method of addition, the like terms from all the given expressions are required to be written in one column. Accordingly for $"+mainTerm+"$ there is no like term in the first expression and hence 'None of the given' term will appear above $"+mainTerm+"$ in vertical arrangement method of addition. Hence, 'None of the given' is the answer.<br>";
-					Solu1="#उत्तर : दिलेल्या पैकी एकही नाही <br>उभी मांडणी पद्धतीने बेरीज करतांना दिलेल्या सर्व बैजिक राशीतील सजातीय पदे एकाच रकान्यात लिहितात. त्यानुसार $"+mainTerm+"$ या पदाच्या रकान्यात पहिल्या राशीतील कोणतेही पद येणार नाही कारण पहिल्या राशीत $"+mainTerm+"$ या पदाला सजातीय पद कोणतेही नाही. म्हणून 'दिलेल्या पैकी एकही नाही' हे उत्तर. <br>";
+					Solu="Ans : None of the given <br> In vertical arrangement method of addition, the like terms from all the given expressions are required to be written in one column.<br> The arrangement is as shown below. <br> ARRANGEMENT<br> Accordingly for $"+mainTerm+"$ there is no like term in the first expression and hence None of the given term will appear above $"+mainTerm+"$ in vertical arrangement method of addition. Hence, None of the given is the answer. <br>";
+					Solu1="#उत्तर : दिलेल्या पैकी एकही नाही <br> उभी मांडणी पद्धतीने बेरीज करतांना दिलेल्या सर्व बैजिक राशीतील सजातीय पदे एकाच रकान्यात लिहितात.<br>याची मांडणी खाली दाखविल्या नुसार असते. <br> मांडणी <br> त्यानुसार $"+mainTerm+"$ या पदाच्या रकान्यात पहिल्या राशीतील कोणतेही पद येणार नाही कारण पहिल्या राशीत $"+mainTerm+"$ या पदाला सजातीय पद कोणतेही नाही. म्हणून दिलेल्या पैकी एकही नाही हे उत्तर. <br>";
 					
 			
 

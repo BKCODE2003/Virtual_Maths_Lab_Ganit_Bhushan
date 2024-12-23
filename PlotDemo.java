@@ -26,7 +26,7 @@ public class PlotDemo {
 									Plot.seriesOpts().
 										line(Plot.Line.SOLID).
 										color(Color.BLUE).
-										marker(Plot.Marker.SQUARE).
+										marker(Plot.Marker.BAR).
 										markerColor(Color.RED).
 										markerSize(5)).
 							series("Intersection", Plot.data().
@@ -34,7 +34,7 @@ public class PlotDemo {
 										Plot.seriesOpts().
 											line(Plot.Line.NONE).
 											color(Color.BLACK).
-											marker(Plot.Marker.INCIRCLE).
+											marker(Plot.Marker.BAR).
 											markerColor(Color.RED).
 											markerSize(12));
 

@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VESIT_030102_109_Assign24_Bhushan",
+            "request": "launch",
+            "mainClass": "VESIT_030102_109_Assign24_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "ExpressionTableGenerator",
+            "request": "launch",
+            "mainClass": "ExpressionTableGenerator",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "ExpressionGenerator",
+            "request": "launch",
+            "mainClass": "ExpressionGenerator",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
             "name": "VESIT_030102_104_Assign23_Bhushan",
             "request": "launch",
             "mainClass": "VESIT_030102_104_Assign23_Bhushan",
