@@ -34,16 +34,16 @@ public class VESIT_03040302_138_Assign26_Bhushan {
 			rowhead.createCell(head).setCellValue(header[head]);
 			
 		}
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter Number of question :");
-		int q=sc.nextInt();
+		// Scanner sc=new Scanner(System.in);
+		// System.out.println("Enter Number of question :");
+		// int q=sc.nextInt();
 			int mapsize,mapsizeafter;
 			HashMap<String, Integer> map = new HashMap<String, Integer> ();
 		
-			for (int j=1;j<q+1;j++)
+			for (int j=1;j<201;j++)
  		{
 		
-
+ 
 			XSSFRow row = sheet1.createRow(j);
 					row.createCell(0).setCellValue(j); 
 					row.createCell(1).setCellValue("Text"); 
@@ -290,9 +290,10 @@ public class VESIT_03040302_138_Assign26_Bhushan {
 					
 
 					ArrayList<String> coeffArr = new ArrayList<String>();
+                    ArrayList<String> coeffArr2 = new ArrayList<String>();
 					
 					//int coeffArr2 [];
-					Integer b,b2,b3,b4;
+					Integer b,b2,b3,b4,b5;
 						do{
 							b  = (int) (Math.random() * 50);
 							b2 = (int) (Math.random() * 50)-25;
@@ -300,22 +301,38 @@ public class VESIT_03040302_138_Assign26_Bhushan {
 
 						if(b==1){
 							coeffArr.add("");
+                            coeffArr2.add("&{} {}&");
 						}
 						else if(b==-1){
 							coeffArr.add("-");
+                            coeffArr2.add("&{}-{}&");
 						}
 						else{
 							coeffArr.add(b.toString());
+                            if(b==Math.abs(b)){
+                                coeffArr2.add("&{} {}&"+b.toString());
+                            }
+                            else{
+                                coeffArr2.add("&{}-{}&"+(-b));
+                            }
 						}
 
 						if(b2==1){
 							coeffArr.add("");
+                            coeffArr2.add("&{}+{}&");
 						}
 						else if(b2==-1){
 							coeffArr.add("-");
+                            coeffArr2.add("&{}-{}&");
 						}
 						else{
 							coeffArr.add(b2.toString());
+                            if(b2==Math.abs(b2)){
+                                coeffArr2.add("&{}+{}&"+b2.toString());
+                            }
+                            else{
+                                coeffArr2.add("&{}-{}&"+(-b2));
+                            }
 						}
 						
 
@@ -421,11 +438,424 @@ public class VESIT_03040302_138_Assign26_Bhushan {
 						wrong_ans1="$"+term3+"$";
                     }
                     
+
+
+                    String verArrange="",correctioString="";
                     wrong_ans2="$"+term1+"$";
 					// System.out.println("Powarr:["+powArr+"] Powarr138:["+powArr138+"] Mainterm:"+mainTerm+" Term3:"+term3+" Term4:"+term4+" J:"+j+"  Iam:"+Iam+"");
 					// Iam="";
 					//System.out.println(powArr);
 					//System.out.println(coeffArr);
+
+                    if(mainTerm.equals(term3)){
+                        if(k!=1){
+                            if((powArr138.get(1)).equals(powArr.get(0))){
+                                if(b3==1){
+                                    coeffArr2.add("&{}+{}&");
+                                }
+                                else if(b3==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b3==Math.abs(b3)){
+                                        coeffArr2.add("&{}+{}&"+b3.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b3));
+                                    }
+                                }
+        
+                                if(b4==1){
+                                    coeffArr2.add("&{} {}&");
+                                }
+                                else if(b4==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b4==Math.abs(b4)){
+                                        coeffArr2.add("&{} {}&"+b4.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b4));
+                                    }
+                                }
+
+                                b5=b+b4;
+                                if(b5==1){
+                                    coeffArr2.add("&{} {}&");
+                                }
+                                else if(b5==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b5==Math.abs(b5)){
+                                        coeffArr2.add("&{} {}&"+b5.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b5));
+                                    }
+                                }
+
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+"&{} {}&&{} {}&\\\\+\\quad"+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&"+coeffArr2.get(2)+""+powArr138.get(0)+"&{} {}&&\\\\\\hline"+coeffArr2.get(4)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+""+coeffArr2.get(2)+""+powArr138.get(0)+"& \\ \\ \\end{alignat*}$";
+
+
+
+                            }else if ((powArr138.get(1)).equals(powArr.get(1))) {
+                                if(b3==1){
+                                    coeffArr2.add("&{}+{}&");
+                                }
+                                else if(b3==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b3==Math.abs(b3)){
+                                        coeffArr2.add("&{}+{}&"+b3.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b3));
+                                    }
+                                }
+        
+                                if(b4==1){
+                                    coeffArr2.add("&{} {}&");
+                                }
+                                else if(b4==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b4==Math.abs(b4)){
+                                        coeffArr2.add("&{} {}&"+b4.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b4));
+                                    }
+                                }
+
+                                b5=b2+b4;
+                                if(b5==1){
+                                    coeffArr2.add("&{}+{}&");
+                                }
+                                else if(b5==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b5==Math.abs(b5)){
+                                        coeffArr2.add("&{}+{}&"+b5.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b5));
+                                    }
+                                }
+
+
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+"&{} {}&&{} {}&\\\\+\\quad&{} {}&"+coeffArr2.get(3)+""+powArr138.get(1)+""+coeffArr2.get(2)+""+powArr138.get(0)+"&{} {}&&\\\\\\hline"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(4)+""+powArr.get(1)+""+coeffArr2.get(2)+""+powArr138.get(0)+"&{} {}&& \\ \\ \\end{alignat*}$";
+
+
+                            }else{
+                                if(b3==1){
+                                    coeffArr2.add("&{} {}&");
+                                    correctioString="&{}+{}&";
+                                }
+                                else if(b3==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                    correctioString="&{}-{}&";
+                                }
+                                else{
+                                    if(b3==Math.abs(b3)){
+                                        coeffArr2.add("&{} {}&"+b3.toString());
+                                        correctioString="&{}+{}&"+b3.toString();
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b3));
+                                        correctioString="&{}-{}&"+(-b3);
+                                    }
+                                }
+        
+                                if(b4==1){
+                                    coeffArr2.add("&{}+{}&");
+                                }
+                                else if(b4==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b4==Math.abs(b4)){
+                                        coeffArr2.add("&{}+{}&"+b4.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b4));
+                                    }
+                                }
+
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+"&{} {}&&{} {}&\\\\+\\quad&{} {}&&{} {}&"+coeffArr2.get(2)+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&\\\\\\hline"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+""+correctioString+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+" \\ \\ \\end{alignat*}$";
+
+                            }
+                        }else{
+                            if((powArr138.get(1)).equals(powArr.get(0))){
+                                if(b3==1){
+                                    coeffArr2.add("&{}+{}&");
+                                }
+                                else if(b3==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b3==Math.abs(b3)){
+                                        coeffArr2.add("&{}+{}&"+b3.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b3));
+                                    }
+                                }
+        
+                                if(b4==1){
+                                    coeffArr2.add("&{} {}&");
+                                }
+                                else if(b4==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b4==Math.abs(b4)){
+                                        coeffArr2.add("&{} {}&"+b4.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b4));
+                                    }
+                                }
+                                b5=b+b4;
+                                if(b5==1){
+                                    coeffArr2.add("&{} {}&");
+                                }
+                                else if(b5==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b5==Math.abs(b5)){
+                                        coeffArr2.add("&{} {}&"+b5.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b5));
+                                    }
+                                }
+
+
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+"&{} {}&&{} {}&&{} {}&\\\\+\\quad"+coeffArr2.get(3)+""+powArr138.get(1)+""+coeffArr2.get(2)+""+powArr138.get(0)+"&{} {}&&{} {}&&\\\\\\hline"+coeffArr2.get(4)+""+powArr.get(0)+""+coeffArr2.get(2)+""+powArr138.get(0)+"&{} {}&&{} {}&& \\ \\ \\end{alignat*}$";
+
+
+                            }else{
+                                if(b3==1){
+                                    coeffArr2.add("&{} {}&");
+                                    correctioString="&{}+{}&";
+                                }
+                                else if(b3==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                    correctioString="&{}-{}&";
+                                }
+                                else{
+                                    if(b3==Math.abs(b3)){
+                                        coeffArr2.add("&{} {}&"+b3.toString());
+                                        correctioString="&{}+{}&"+b3.toString();
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b3));
+                                        correctioString="&{}-{}&"+(-b3);
+                                    }
+                                }
+        
+                                if(b4==1){
+                                    coeffArr2.add("&{}+{}&");
+                                }
+                                else if(b4==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b4==Math.abs(b4)){
+                                        coeffArr2.add("&{}+{}&"+b4.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b4));
+                                    }
+                                }
+
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+"&{} {}&&{} {}&&{} {}&\\\\+\\quad&{} {}&"+coeffArr2.get(2)+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&&\\\\\\hline"+coeffArr2.get(0)+""+powArr.get(0)+""+correctioString+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&& \\ \\ \\end{alignat*}$";
+
+                            }
+                        }
+                    }else if(mainTerm.equals(term4)){
+                        if(k!=1){
+                            if(b3==1){
+                                coeffArr2.add("&{} {}&");
+                                correctioString="&{}+{}&";
+                            }
+                            else if(b3==-1){
+                                coeffArr2.add("&{}-{}&");
+                                correctioString="&{}-{}&";
+
+                            }
+                            else{
+                                if(b3==Math.abs(b3)){
+                                    coeffArr2.add("&{} {}&"+b3.toString());
+                                    correctioString="&{}+{}&"+b3.toString();
+
+                                }
+                                else{
+                                    coeffArr2.add("&{}-{}&"+(-b3));
+                                    correctioString="&{}-{}&"+(-b3);
+                                }
+                            }
+    
+                            if(b4==1){
+                                coeffArr2.add("&{}+{}&");
+                            }
+                            else if(b4==-1){
+                                coeffArr2.add("&{}-{}&");
+                            }
+                            else{
+                                if(b4==Math.abs(b4)){
+                                    coeffArr2.add("&{}+{}&"+b4.toString());
+                                }
+                                else{
+                                    coeffArr2.add("&{}-{}&"+(-b4));
+                                }
+                            }
+
+                            if((powArr138.get(0)).equals(powArr.get(0))){
+                                b5=b+b3;
+                                if(b5==1){
+                                    coeffArr2.add("&{} {}&");
+                                }
+                                else if(b5==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b5==Math.abs(b5)){
+                                        coeffArr2.add("&{} {}&"+b5.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b5));
+                                    }
+                                }
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+"&{} {}&&{} {}&\\\\+\\quad"+coeffArr2.get(2)+""+powArr138.get(0)+"&{} {}&"+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&&\\\\\\hline"+coeffArr2.get(4)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&& \\ \\ \\end{alignat*}$";
+
+
+                            }else if ((powArr138.get(0)).equals(powArr.get(1))) {
+                                b5=b2+b3;
+                                if(b5==1){
+                                    coeffArr2.add("&{}+{}&");
+                                }
+                                else if(b5==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b5==Math.abs(b5)){
+                                        coeffArr2.add("&{}+{}&"+b5.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b5));
+                                    }
+                                }
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+"&{} {}&&{} {}&\\\\+\\quad&{} {}&\""+coeffArr2.get(2)+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&&\\\\\\hline"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(4)+""+powArr.get(1)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&& \\ \\ \\end{alignat*}$";  
+                            }else{
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+"&{} {}&&{} {}&\\\\+\\quad&{} {}&&{} {}&"+coeffArr2.get(2)+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&\\\\\\hline"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+""+correctioString+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"& \\ \\ \\end{alignat*}$";
+                            }
+                        }else{
+                            if(b3==1){
+                                coeffArr2.add("&{} {}&");
+                                correctioString="&{}+{}&";
+                            }
+                            else if(b3==-1){
+                                coeffArr2.add("&{}-{}&");
+                                correctioString="&{}-{}&";
+                            }
+                            else{
+                                if(b3==Math.abs(b3)){
+                                    coeffArr2.add("&{} {}&"+b3.toString());
+                                    correctioString="&{}+{}&"+b3.toString();
+                                }
+                                else{
+                                    coeffArr2.add("&{}-{}&"+(-b3));
+                                    correctioString="&{}-{}&"+(-b3);
+                                }
+                            }
+    
+                            if(b4==1){
+                                coeffArr2.add("&{}+{}&");
+                            }
+                            else if(b4==-1){
+                                coeffArr2.add("&{}-{}&");
+                            }
+                            else{
+                                if(b4==Math.abs(b4)){
+                                    coeffArr2.add("&{}+{}&"+b4.toString());
+                                }
+                                else{
+                                    coeffArr2.add("&{}-{}&"+(-b4));
+                                }
+                            }
+
+                            if((powArr138.get(0)).equals(powArr.get(0))){
+                                b5=b+b3;
+                                if(b5==1){
+                                    coeffArr2.add("&{} {}&");
+                                }
+                                else if(b5==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b5==Math.abs(b5)){
+                                        coeffArr2.add("&{} {}&"+b5.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b5));
+                                    }
+                                }
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+"&{} {}&&{} {}&&{} {}&\\\\+\\quad"+coeffArr2.get(2)+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&&{} {}&&\\\\\\hline"+coeffArr2.get(4)+""+powArr.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&&{} {}&& \\ \\ \\end{alignat*}$";
+                            }else{
+                                verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+"&{} {}&&{} {}&&{} {}&\\\\+\\quad&{} {}&"+coeffArr2.get(2)+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&&\\\\\\hline"+coeffArr2.get(0)+""+powArr.get(0)+""+correctioString+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&& \\ \\ \\end{alignat*}$";
+                            }
+                        }
+                    }else{
+                                if(b3==1){
+                                    coeffArr2.add("&{} {}&");
+                                    correctioString="&{}+{}&";
+                                }
+                                else if(b3==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                    correctioString="&{}-{}&";
+                                }
+                                else{
+                                    if(b3==Math.abs(b3)){
+                                        coeffArr2.add("&{} {}&"+b3.toString());
+                                        correctioString="&{}+{}&"+b3.toString();
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b3));
+                                        correctioString="&{}-{}&"+(-b3);
+                                    }
+                                }
+        
+                                if(b4==1){
+                                    coeffArr2.add("&{}+{}&");
+                                }
+                                else if(b4==-1){
+                                    coeffArr2.add("&{}-{}&");
+                                }
+                                else{
+                                    if(b4==Math.abs(b4)){
+                                        coeffArr2.add("&{}+{}&"+b4.toString());
+                                    }
+                                    else{
+                                        coeffArr2.add("&{}-{}&"+(-b4));
+                                    }
+                                }
+
+                                if(k!=1){
+                                    verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+"&{} {}&&{} {}&\\\\+\\quad&{} {}&&{} {}&"+coeffArr2.get(2)+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&\\\\\\hline"+coeffArr2.get(0)+""+powArr.get(0)+""+coeffArr2.get(1)+""+powArr.get(1)+""+correctioString+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+" \\ \\ \\end{alignat*}$";
+                                }
+                                else{
+                                    verArrange="$\\begin{alignat*}{13}"+coeffArr2.get(0)+""+powArr.get(0)+"&{} {}&&{} {}&&{} {}&\\\\+\\quad&{} {}&"+coeffArr2.get(2)+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&&\\\\\\hline"+coeffArr2.get(0)+""+powArr.get(0)+""+correctioString+""+powArr138.get(0)+""+coeffArr2.get(3)+""+powArr138.get(1)+"&{} {}&& \\ \\ \\end{alignat*}$";
+                                }
+                    }
+
+
 					Que="In vertical arrangement method for addition of $"+exp1+"$ and $"+exp2+"$ which term will appear above $"+mainTerm+"$ ? <br>";
 					Que1="#उभी मांडणी पद्धतीने $"+exp1+"$ आणि $"+exp2+"$ या राशींची बेरीज करतांना $"+mainTerm+"$ या पदाच्या वर कोणते पद येईल? <br>";
 					String Question=""+Que+" "+Que1+"";
@@ -445,8 +875,8 @@ public class VESIT_03040302_138_Assign26_Bhushan {
 		//				  row.createCell(14).setCellValue(" ");
 					row.createCell(15).setCellValue("2022.bhushan.kor@ves.ac.in");
 				
-					Solu="Ans : None of the given <br> In vertical arrangement method of addition, the like terms from all the given expressions are required to be written in one column.<br> The arrangement is as shown below. <br> ARRANGEMENT<br> Accordingly for $"+mainTerm+"$ there is no like term in the first expression and hence None of the given term will appear above $"+mainTerm+"$ in vertical arrangement method of addition. Hence, None of the given is the answer. <br>";
-					Solu1="#उत्तर : दिलेल्या पैकी एकही नाही <br> उभी मांडणी पद्धतीने बेरीज करतांना दिलेल्या सर्व बैजिक राशीतील सजातीय पदे एकाच रकान्यात लिहितात.<br>याची मांडणी खाली दाखविल्या नुसार असते. <br> मांडणी <br> त्यानुसार $"+mainTerm+"$ या पदाच्या रकान्यात पहिल्या राशीतील कोणतेही पद येणार नाही कारण पहिल्या राशीत $"+mainTerm+"$ या पदाला सजातीय पद कोणतेही नाही. म्हणून दिलेल्या पैकी एकही नाही हे उत्तर. <br>";
+					Solu="Ans : None of the given <br> In vertical arrangement method of addition, the like terms from all the given expressions are required to be written in one column.<br> The arrangement is as shown below. <br> "+verArrange+" <br> Accordingly for $"+mainTerm+"$ there is no like term in the first expression and hence None of the given term will appear above $"+mainTerm+"$ in vertical arrangement method of addition. Hence, None of the given is the answer. <br>";
+					Solu1="#उत्तर : दिलेल्या पैकी एकही नाही <br> उभी मांडणी पद्धतीने बेरीज करतांना दिलेल्या सर्व बैजिक राशीतील सजातीय पदे एकाच रकान्यात लिहितात.<br>याची मांडणी खाली दाखविल्या नुसार असते. <br> "+verArrange+" <br> त्यानुसार $"+mainTerm+"$ या पदाच्या रकान्यात पहिल्या राशीतील कोणतेही पद येणार नाही कारण पहिल्या राशीत $"+mainTerm+"$ या पदाला सजातीय पद कोणतेही नाही. म्हणून दिलेल्या पैकी एकही नाही हे उत्तर. <br>";
 					
 			
 

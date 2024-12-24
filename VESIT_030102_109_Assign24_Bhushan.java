@@ -159,11 +159,13 @@ public class VESIT_030102_109_Assign24_Bhushan {
             }
 
             int a=0,b=0,c=0,a1=0,b1=0,c1=0,a2=0,b2=0,c2=0,a3=0,b3=0,c3=0;
+            String aR="=",bR="<",cR=">";
             int ch=(int)(Math.random()*6+1);
 
             switch (ch) {
                 case 1:
                     a=1;b=2;c=3; a1=1;b1=3;c1=2;  a2=2;b2=1;c2=3; a3=2;b3=3;c3=1;
+                    aR="=";bR="<";cR=">";
                     getTerm.add(term1); getTerm.add(term2); getTerm.add(term3);
                     getTerm.add(solterm1); getTerm.add(solterm2); getTerm.add(solterm3);
                     getTerm.add(solterm4+" which gives equal value. "); getTerm.add(solterm5+" and <br> $"+lResults[1].toString()+"<"+rResults[1].toString()+"$. "); getTerm.add(solterm6+" and <br> $"+lResults[2].toString()+">"+rResults[2].toString()+"$. ");
@@ -172,6 +174,7 @@ public class VESIT_030102_109_Assign24_Bhushan {
                 break;
                 case 2:
                     a=1;b=3;c=2;  a1=1;b1=2;c1=3;  a2=2;b2=1;c2=3; a3=2;b3=3;c3=1;
+                    aR="=";bR=">";cR="<";
                     getTerm.add(term1); getTerm.add(term3); getTerm.add(term2);
                     getTerm.add(solterm1); getTerm.add(solterm3); getTerm.add(solterm2);
                     getTerm.add(solterm4+" which gives equal value. "); getTerm.add(solterm6+" and <br> $"+lResults[2].toString()+">"+rResults[2].toString()+"$. "); getTerm.add(solterm5+" and <br> $"+lResults[1].toString()+"<"+rResults[1].toString()+"$. ");
@@ -181,6 +184,7 @@ public class VESIT_030102_109_Assign24_Bhushan {
                 break;
                 case 3:
                     a=2;b=1;c=3;  a1=1;b1=3;c1=2;  a2=3;b2=1;c2=2; a3=2;b3=3;c3=1;
+                    aR="<";bR="=";cR=">";
                     getTerm.add(term2); getTerm.add(term1); getTerm.add(term3);
                     getTerm.add(solterm2); getTerm.add(solterm1); getTerm.add(solterm3);
                     getTerm.add(solterm5+" and <br> $"+lResults[1].toString()+"<"+rResults[1].toString()+"$. "); getTerm.add(solterm4+" which gives equal value. "); getTerm.add(solterm6+" and <br> $"+lResults[2].toString()+">"+rResults[2].toString()+"$. ");
@@ -191,6 +195,7 @@ public class VESIT_030102_109_Assign24_Bhushan {
                 break;
                 case 4:
                     a=2;b=3;c=1;  a1=1;b1=3;c1=2;  a2=2;b2=1;c2=3; a3=3;b3=2;c3=1;
+                    aR="<";bR=">";cR="<";
                     getTerm.add(term2); getTerm.add(term3); getTerm.add(term1);
                     getTerm.add(solterm2); getTerm.add(solterm3); getTerm.add(solterm1);
                     getTerm.add(solterm5+" and <br> $"+lResults[1].toString()+"<"+rResults[1].toString()+"$. "); getTerm.add(solterm6+" and <br> $"+lResults[2].toString()+">"+rResults[2].toString()+"$. "); getTerm.add(solterm4+" which gives equal value. ");
@@ -201,6 +206,7 @@ public class VESIT_030102_109_Assign24_Bhushan {
                 break;
                 case 5:
                     a=3;b=1;c=2;  a1=1;b1=3;c1=2;  a2=2;b2=1;c2=3; a3=2;b3=3;c3=1;
+                    aR=">";bR="=";cR="<";
                     getTerm.add(term3); getTerm.add(term1); getTerm.add(term2);
                     getTerm.add(solterm3); getTerm.add(solterm1); getTerm.add(solterm2);
                     getTerm.add(solterm6+" and <br> $"+lResults[2].toString()+">"+rResults[2].toString()+"$. "); getTerm.add(solterm4+" which gives equal value. "); getTerm.add(solterm5+" and <br> $"+lResults[1].toString()+"<"+rResults[1].toString()+"$. ");
@@ -210,11 +216,12 @@ public class VESIT_030102_109_Assign24_Bhushan {
                 break;
                 case 6:
                     a=3;b=2;c=1;  a1=1;b1=3;c1=2;  a2=2;b2=1;c2=3; a3=2;b3=3;c3=1;
+                    aR=">";bR="<";cR="=";
                     getTerm.add(term3); getTerm.add(term2); getTerm.add(term1);
                     getTerm.add(solterm3); getTerm.add(solterm2); getTerm.add(solterm1);
                     getTerm.add(solterm6+" and <br> $"+lResults[2].toString()+">"+rResults[2].toString()+"$. "); getTerm.add(solterm5+" and <br> $"+lResults[1].toString()+"<"+rResults[1].toString()+"$. "); getTerm.add(solterm4+" which gives equal value. ");
                     getTerm.add(""+lResults[2].toString()+">"+rResults[2].toString()+""); getTerm.add(""+lResults[1].toString()+"<"+rResults[1].toString()+""); 
-                    getTerm.add(msolterm6+" आणि <br> $"+lResults[2].toString()+">"+rResults[2].toString()+"$ पेक्षा मोठा आहे. "); getTerm.add(msolterm5+" आणि <br> $"+lResults[1].toString()+"<"+rResults[1].toString()+"$ पेक्षा लहान आहे. "); getTerm.add(msolterm4+" म्हणजेच दोन्ही बाजूंची किंमत/ मूल्य समान आहे असे दिसते. ");
+                    getTerm.add(msolterm6+" आणि <br> $"+lResults[2].toString()+">"+rResults[2].toString()+"$ पेक्षा मोठा आहे. "); getTerm.add(msolterm5+" आणि <br> $"+lResults[1].toString()+"<"+rResults[1].toString()+"$ पेक्षा लहान आहे. "); getTerm.add(msolterm4+" म्हणजेच दोन्ही बाजूंची किंमत/मूल्य समान आहे असे दिसते. ");
 
                 break;
                 default:
@@ -229,36 +236,92 @@ public class VESIT_030102_109_Assign24_Bhushan {
            
             Que="Study each pair of expressions given in Expressions column (LHS and RHS) and match them with appropriate operator present in Relations column <br> # राशींच्या रकान्यामध्ये (LHS व RHS) दिलेल्या राशींच्या जोड्या तपासून बघा आणि त्यांना जोडण्यासाठी चिन्हांच्या रकान्यातील चिन्हांशी त्यांची जोडी लावा. \\[\\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{Expressions (LHS)}& \\text{Expressions (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(0)+" & 1 & = \\\\\\hline b & "+getTerm.get(1)+" & 2 & < \\\\\\hline c & "+getTerm.get(2)+" & 3 & > \\\\\\hline \\end{array} \\]";
 			Que1="";
-            Correct_ans="$a="+a+", b="+b+", c="+c+"$";
+            Correct_ans="$a ≈ "+a+", b ≈ "+b+", c ≈ "+c+"$";
            
-			wrong_ans="$a="+a1+", b="+b1+", c="+c1+"$";
-			wrong_ans1="$a="+a2+", b="+b2+", c="+c2+"$";
-			wrong_ans2="$a="+a3+", b="+b3+", c="+c3+"$";
+			wrong_ans="$a ≈ "+a1+", b ≈ "+b1+", c ≈ "+c1+"$";
+			wrong_ans1="$a ≈ "+a2+", b ≈ "+b2+", c ≈ "+c2+"$";
+			wrong_ans2="$a ≈ "+a3+", b ≈ "+b3+", c ≈ "+c3+"$";
 			Sol1="";
 			
+            // Table: \\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{Expressions  (LHS)}& \\text{Expressions (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(0)+" & 1 & = \\\\\\hline b & "+getTerm.get(1)+" & 2 & < \\\\\\hline c & "+getTerm.get(2)+" & 3 & > \\\\\\hline \\end{array} \\]
 			
-			Sol="Answer: \\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{Expressions  (LHS)}& \\text{Expressions (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(0)+" & 1 & = \\\\\\hline b & "+getTerm.get(1)+" & 2 & < \\\\\\hline c & "+getTerm.get(2)+" & 3 & > \\\\\\hline \\end{array} \\]" +
-                                "Solution: Answer - <br> The convention of using the operators between any two expressions is as follows : " +
+			Sol="Solution: Answer : <br> The convention of using the operators between any two expressions is as follows : " +
                                 "<br>$=$ used  when both LHS and RHS are having the same value. " +
                                 "<br>$>$ used when the value of LHS is greater than that of RHS. " +
                                 "<br>$<$ used when the value of LHS  is less than that of RHS. <br>" +
-                                "Below given is the table, in which the answer for each expression is calculated and also explained. <br> \\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{Expressions (LHS)}& \\text{Expressions (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(3)+" & 1 & = \\\\\\hline b & "+getTerm.get(4)+" & 2 & < \\\\\\hline c & "+getTerm.get(5)+" & 3 & > \\\\\\hline \\end{array} \\]" +
-                                " <br>Row $a)$ "+getTerm.get(6)+" <br>$\\therefore a ≈ "+a+"$. <br>Row $b)$ "+getTerm.get(7)+" <br>$\\therefore b ≈ "+b+"$. <br>Row $c)$ "+getTerm.get(8)+" <br>$\\therefore c ≈ "+c+"$. <br>$\\therefore$ correct matching is $a ≈ "+a+", b ≈ "+b+", c ≈ "+c+"$. <br >";
+                                "Below given is the table, in which the answer for each expression is calculated. <br>  \\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{Expressions (LHS)}& \\text{Expressions (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(3)+" & "+a+" & "+aR+" \\\\\\hline b & "+getTerm.get(4)+" & "+b+" & "+bR+" \\\\\\hline c & "+getTerm.get(5)+" & "+c+" & "+cR+" \\\\\\hline \\end{array} \\]<br>Explaination is as follows . . . . <br>" +
+                                "Row $a)$ "+getTerm.get(6)+" <br>$\\therefore a ≈ "+a+"$. <br>Row $b)$ "+getTerm.get(7)+" <br>$\\therefore b ≈ "+b+"$. <br>Row $c)$ "+getTerm.get(8)+" <br>$\\therefore c ≈ "+c+"$. <br>$\\therefore$ correct matching is $a ≈ "+a+", b ≈ "+b+", c ≈ "+c+"$. <br >";
                                 
     
-			Sol1="# उत्तर : <br> रूढ पद्धतीनुसार $2$ राशींमधील संबंध खालील प्रकारे दाखविला जातो" +
+			
+            String input1 = ""+getTerm.get(3)+"";
+            String input2 = ""+getTerm.get(4)+"";
+            String input3 = ""+getTerm.get(5)+"";
+
+
+            // Split the string based on " & "
+            String[] equations1 = input1.split(" & ");
+            String[] equations2 = input2.split(" & ");
+            String[] equations3 = input3.split(" & ");
+            
+            // Assign each part to the respective strings
+            String string1 = equations1.length > 0 ? equations1[0] : "";
+            String string2 = equations1.length > 1 ? equations1[1] : "";
+            String string3 = equations2.length > 0 ? equations2[0] : "";
+            String string4 = equations2.length > 1 ? equations2[1] : "";
+            String string5 = equations3.length > 0 ? equations3[0] : "";
+            String string6 = equations3.length > 1 ? equations3[1] : "";
+                                
+
+            String marathiTable="<table align='center' style='border: 1px solid #000000;'>"+
+                "<tr style='border: 1px solid #000000; text-align:center'>"+
+                    "<th style='border: 1px solid #000000; padding: 1px;width:26px;height:5px'></th>"+
+                    "<th style='border: 1px solid #000000; padding: 1px;width:170px;height:5px'>राशी (LHS)</th>"+
+                    "<th style='border: 1px solid #000000; padding: 1px;width:170px;height:5px'>राशी (RHS)</th>"+
+                    "<th style='border: 1px solid #000000; padding: 1px;width:28px;height:5px'></th>"+
+                    "<th style='border: 1px solid #000000; padding: 1px;width:91px;height:5px'>संबंध</th></tr>"+
+                    "<tr style='border: 1px solid #000000; text-align:center;'>"+
+                    "<td style='border: 1px solid #000000; padding: 1px;width:26px;height:5px'>$\\;a\\;$</td>"+
+                    "<td style='border: 1px solid #000000;'>$\\;"+string1+"\\;$</td>"+
+                    "<td style='border: 1px solid #000000;'>$\\;"+string2+"\\;$</td>"+
+                    "<td style='border: 1px solid #000000; padding: 1px;width:28px;height:5px'>$\\;"+a+"\\;$</td>"+
+                    "<td style='border: 1px solid #000000;text-align:center'>$\\;"+aR+"\\;$</td>"+
+                    "</tr>"+
+
+                    "<tr style='border: 1px solid #000000; text-align:center;'>"+
+                    "<td style='border: 1px solid #000000; padding: 1px;width:26px;height:5px'>$\\;b\\;$</td>"+
+                    "<td style='border: 1px solid #000000;'>$\\;"+string3+"\\;$</td>"+
+                    "<td style='border: 1px solid #000000;'>$\\;"+string4+"\\;$</td>"+
+                    "<td style='border: 1px solid #000000; padding: 1px;width:28px;height:5px'>$\\;"+b+"\\;$</td>"+
+                    "<td style='border: 1px solid #000000;text-align:center'>$\\;"+bR+"\\;$</td>"+
+                    "</tr>"+
+
+                    "<tr style='border: 1px solid #000000; text-align:center;'>"+
+                        "<td style='border: 1px solid #000000; padding: 1px;width:26px;height:5px'>$\\;c\\;$</td>"+
+                        "<td style='border: 1px solid #000000;'>$\\;"+string5+"\\;$</td>"+
+                        "<td style='border: 1px solid #000000;'>$\\;"+string6+"\\;$</td>"+
+                        "<td style='border: 1px solid #000000; padding: 1px;width:28px;height:5px'>$\\;"+c+"\\;$</td>"+
+                        "<td style='border: 1px solid #000000;text-align:center'>$\\;"+cR+"\\;$</td>"+
+                    "</tr>"+
+                "</tr>"+
+            "</table> ";
+            
+            //\\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{राशी (LHS)}& \\text{राशी (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(3)+" & 1 & =  \\\\\\hline b & "+getTerm.get(4)+" & 2 & < \\\\\\hline c & "+getTerm.get(5)+" & 3 & >  \\\\\\hline \\end{array} \\]
+
+            Sol1="# उत्तर : <br> रूढ पद्धतीनुसार $2$ राशींमधील संबंध खालील प्रकारे दाखविला जातो" +
                                 "<br> $=$ जेंव्हा डाव्या (LHS) आणि उजव्या (RHS) बाजूचे राशी मूल्य  समान असते तेंव्हा हे चिन्ह वापरतात. " +
                                 "<br> $>$ जेंव्हा डाव्या (LHS) बाजूचे राशी मूल्य  उजव्या (RHS) बाजूच्या राशी मुल्या पेक्षा मोठे असते तेंव्हा हे चिन्ह वापरतात, आणि " +
                                 "<br> $<$ जेंव्हा डाव्या (LHS) बाजूचे राशी मूल्य उजव्या (RHS) बाजूच्या राशी मुल्या पेक्षा लहान असते तेंव्हा हे चिन्ह वापरतात. <br>" +
-                                "खाली दिलेल्या तक्त्यात सर्व राशी सोडवून त्यांचे उत्तर दाखविले आहे. आणि त्या खाली खुलासा सुद्धा दिला आहे. \\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{Expressions (LHS)}& \\text{Expressions (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(3)+" & 1 & = \\\\\\hline b & "+getTerm.get(4)+" & 2 & < \\\\\\hline c & "+getTerm.get(5)+" & 3 & > \\\\\\hline \\end{array} \\]" +
+                                "खाली दिलेल्या तक्त्यात सर्व राशी सोडवून त्यांचे उत्तर दाखविले आहे. <br> "+marathiTable+" <br> याचा खुलासा खालील प्रमाणे . . . . <br>" +
                                 "<br> $a)$ ओळींमध्ये, "+getTerm.get(11)+"" +
                                 "<br> $\\therefore a ≈ "+a+"$ ." +
                                 "<br> $b)$ ओळींमध्ये, "+getTerm.get(12)+"" +
                                 "<br> $\\therefore b ≈ "+b+"$ ." +
                                 "<br> $c)$ ओळींमध्ये, "+getTerm.get(13)+"" +
                                 "<br> $\\therefore c ≈ "+c+"$ ." +
-                                "<br> $\\therefore$ योग्य जोड्या पुढील प्रमाणे आहेत $a ≈ "+a+", b ≈ "+b+", c ≈ "+c+"$. <br> \\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{Expressions (LHS)}& \\text{Expressions (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(3)+" & 1 & =  \\\\\\hline b & "+getTerm.get(4)+" & 2 & < \\\\\\hline c & "+getTerm.get(5)+" & 3 & >  \\\\\\hline \\end{array} \\]";
+                                "<br> $\\therefore$ योग्य जोड्या पुढील प्रमाणे आहेत $a ≈ "+a+", b ≈ "+b+", c ≈ "+c+"$. <br> ";
 			
+
 			String Solution = ""+Sol+" "+Sol1+"";
 			String Question =""+Que+" "+Que1+"";
 			
