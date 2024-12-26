@@ -680,7 +680,9 @@ public class VLab_0304060403_112_Assign20_Bhushan {
                             B1=B1/div_num;
                             C1=C1/div_num;
         
-
+                            A = A1;
+                            B = B1;
+                            C = C1;
                             // Ensure a consistent representation for negative coefficients
                             if (A1 < 0 || (A1 == 0 && B1 < 0)) {
                                 A = -A1;
@@ -950,11 +952,15 @@ public class VLab_0304060403_112_Assign20_Bhushan {
                         "निरीक्षण करून आपल्याला आलेख क्र. $"+randomAnswer+"$ या सर्व अटी पूर्ण करतो हे दिसेल. <br>इतर सर्व आलेखांसाठी किमान एक किंवा दोन्ही अटी पूर्ण करीत नाही. <br>म्हणून दिलेल्या आलेखांपैकी आलेख क्र. $"+randomAnswer+"$ हेच बरोबर उत्तर आहे. <br>";
 
 					String Solution = ""+Solu+" "+Solu1+"";	
-				
-				
+                    int prevJ=j;
+                    if(!uniquePairEquations.add(""+ourLines.get(0)+","+ourLines.get(1)+"")&&!uniquePairEquations.add(""+ourLines.get(1)+","+ourLines.get(0)+"")){
+                        j--;
+                    }
+                    
+
 					row.createCell(16).setCellValue(Solution);
 		//				  row.createCell(17).setCellValue(" ");
-						row.createCell(18).setCellValue(104);
+						row.createCell(18).setCellValue(112);
 
 				
 
@@ -966,7 +972,9 @@ public class VLab_0304060403_112_Assign20_Bhushan {
 						//In Java, a map can consist of virtually any number of key-value pairs, but the keys must always be unique — non-repeating.
 						if(mapsize == mapsizeafter) {
 							System.out.println(Checker);
+                            if(prevJ==j){
                                 j--;
+                            }
 						}
 
 		}
