@@ -126,7 +126,7 @@ public class VLab_0304060403_108_1_Assign16_Bhushan {
 							B1 =(int)(Math.random()*21)-10; // Coefficient B1 between -10 and 10
 							C1 = A1 * qx1 + B1 * qy1;
 							pd1=Math.abs(A1*xIntersect+B1*yIntersect-C1)/Math.sqrt(A1*A1+B1*B1);
-						} while ((A1 ==B1) || (A1==A4 && B1==B4) || pd1<1 ||(qx1==0 && qy1==0)); // Ensure A1 and B1 are not both zero
+						} while ((A1 == B1) || (A1==A4 && B1==B4) || pd1<1 ||(qx1==0 && qy1==0)); // Ensure A1 and B1 are not both zero
 				
 						
 						
@@ -300,7 +300,7 @@ public class VLab_0304060403_108_1_Assign16_Bhushan {
 					}
 
 					
-
+					// System.out.println("nx1 to nx8 :("+nx1+","+ny1+")("+nx2+","+ny2+")("+nx3+","+ny3+")("+nx4+","+ny4+")("+nx5+","+ny5+")("+nx6+","+ny6+")("+nx7+","+ny7+")("+nx8+","+ny8+")");
 					//Images
 					Plot plot = Plot.plot(Plot.plotOpts().
 								width(800).

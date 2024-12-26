@@ -245,7 +245,7 @@ public class VESIT_030102_109_Assign24_Bhushan {
 			
             // Table: \\[ \\begin{array}{|c|c|c|c|c|} \\hline \\text{ } & \\text{Expressions  (LHS)}& \\text{Expressions (RHS)} & \\text{ } & \\text{Relations} \\\\\\hline a & "+getTerm.get(0)+" & 1 & = \\\\\\hline b & "+getTerm.get(1)+" & 2 & < \\\\\\hline c & "+getTerm.get(2)+" & 3 & > \\\\\\hline \\end{array} \\]
 			
-			Sol="Solution: Answer : <br> The convention of using the operators between any two expressions is as follows : " +
+			Sol="Answer : <br> The convention of using the operators between any two expressions is as follows : " +
                                 "<br>$=$ used  when both LHS and RHS are having the same value. " +
                                 "<br>$>$ used when the value of LHS is greater than that of RHS. " +
                                 "<br>$<$ used when the value of LHS  is less than that of RHS. <br>" +
@@ -313,19 +313,17 @@ public class VESIT_030102_109_Assign24_Bhushan {
                                 "<br> $>$ जेंव्हा डाव्या (LHS) बाजूचे राशी मूल्य  उजव्या (RHS) बाजूच्या राशी मुल्या पेक्षा मोठे असते तेंव्हा हे चिन्ह वापरतात, आणि " +
                                 "<br> $<$ जेंव्हा डाव्या (LHS) बाजूचे राशी मूल्य उजव्या (RHS) बाजूच्या राशी मुल्या पेक्षा लहान असते तेंव्हा हे चिन्ह वापरतात. <br>" +
                                 "खाली दिलेल्या तक्त्यात सर्व राशी सोडवून त्यांचे उत्तर दाखविले आहे. <br> "+marathiTable+" <br> याचा खुलासा खालील प्रमाणे . . . . <br>" +
-                                "<br> $a)$ ओळींमध्ये, "+getTerm.get(11)+"" +
+                                "<br> $a)$ ओळीमध्ये, "+getTerm.get(11)+"" +
                                 "<br> $\\therefore a ≈ "+a+"$ ." +
-                                "<br> $b)$ ओळींमध्ये, "+getTerm.get(12)+"" +
+                                "<br> $b)$ ओळीमध्ये, "+getTerm.get(12)+"" +
                                 "<br> $\\therefore b ≈ "+b+"$ ." +
-                                "<br> $c)$ ओळींमध्ये, "+getTerm.get(13)+"" +
+                                "<br> $c)$ ओळीमध्ये, "+getTerm.get(13)+"" +
                                 "<br> $\\therefore c ≈ "+c+"$ ." +
                                 "<br> $\\therefore$ योग्य जोड्या पुढील प्रमाणे आहेत $a ≈ "+a+", b ≈ "+b+", c ≈ "+c+"$. <br> ";
 			
 
 			String Solution = ""+Sol+" "+Sol1+"";
 			String Question =""+Que+" "+Que1+"";
-			
-			
 			
 			row.createCell(4).setCellValue(Question);
 			row.createCell(5).setCellValue(Correct_ans);

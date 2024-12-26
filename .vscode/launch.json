@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VLab_0304060403_112_Assign20_Bhushan",
+            "request": "launch",
+            "mainClass": "VLab_0304060403_112_Assign20_Bhushan",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
+            "name": "LinearEquations",
+            "request": "launch",
+            "mainClass": "LinearEquations",
+            "projectName": "JAVA_14fa1609"
+        },
+        {
+            "type": "java",
             "name": "VESIT_030102_109_Assign24_Bhushan",
             "request": "launch",
             "mainClass": "VESIT_030102_109_Assign24_Bhushan",

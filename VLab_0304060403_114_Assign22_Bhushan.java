@@ -23,7 +23,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class VESIT_0304060403_104_Assign12_Bhushan {
+public class VLab_0304060403_114_Assign22_Bhushan {
 
 	public static int gcd(int a, int b) {
         if (b==0) return a;
@@ -58,29 +58,8 @@ public class VESIT_0304060403_104_Assign12_Bhushan {
 		
     }
 
-	// public class MessagePrinter {
-	// 	private String message;
-	// 	private String message1;
-	
-	// 	public void setMessage(String message) {
-	// 		this.message = message;
-	// 	}
-	// 	public void setMessage1(String message1) {
-	// 		this.message1 = message1;
-	// 	}
-	
-	// 	// Method to return the message
-	// 	public String getMessage() {
-	// 		return this.message;
-	// 	}
-	// 	public String getMessage1() {
-	// 		return this.message1;
-	// 	}
-	// }
-
-
 	public static void main(String args[]) throws IOException,FileNotFoundException{
-		String filename = "D:/excel files/VESIT_0304060403_104_Assign12_Bhushan.xlsx";     //Location where excel file is getting generated
+		String filename = "D:/excel files/VLab_0304060403_114_Assign22_Bhushan.xlsx";     //Location where excel file is getting generated
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		XSSFSheet sheet = workbook.createSheet("Instruction");      //Generating first sheet as Instruction
 		
@@ -102,6 +81,9 @@ public class VESIT_0304060403_104_Assign12_Bhushan {
 		// int imageColumnWidth = 400/7;
 		// sheet1.setColumnWidth(6, imageColumnWidth * 256);  // Adjust the width to fit the image (810 pixels)
 		sheet1.setColumnWidth(6, 57*256);
+		sheet1.setColumnWidth(10, 57*256);
+		sheet1.setColumnWidth(11, 57*256);
+		sheet1.setColumnWidth(12, 57*256);
 		//Adding header to the second sheet
 		for(int head=0; head<header.length; head++) {
 			rowhead.createCell(head).setCellValue(header[head]);
@@ -117,9 +99,6 @@ public class VESIT_0304060403_104_Assign12_Bhushan {
 		
 			for (int j=1;j<q+1;j++)
  		{
-			// VESIT_0304060403_104_Assign12_Bhushan objs=new VESIT_0304060403_104_Assign12_Bhushan();
-			
-			// VESIT_0304060403_104_Assign12_Bhushan.MessagePrinter obj=objs.new MessagePrinter();
 			
 			XSSFRow row = sheet1.createRow(j);
 					row.createCell(0).setCellValue(j); 
@@ -157,7 +136,7 @@ public class VESIT_0304060403_104_Assign12_Bhushan {
 
 					m1=(-ny1*l1+k1*nx1);
 					m2=(-ny3*l2+k2*nx3);
-                                                                                                              
+                                                                                                                  
 					del1=-k1*l2+l1*k2;
 
 					}while((nx1==nx2 && ny1==ny2)||(nx3==nx4 && ny3==ny4)|| del1==0);
@@ -282,8 +261,8 @@ public class VESIT_0304060403_104_Assign12_Bhushan {
 					row.createCell(10).setCellValue(wrong_ans1);
 					row.createCell(11).setCellValue(wrong_ans2);
 				
-					row.createCell(12).setCellValue(60);
-					row.createCell(13).setCellValue(2);
+					row.createCell(12).setCellValue(120);
+					row.createCell(13).setCellValue(4);
 		//				  row.createCell(14).setCellValue(" ");
 					row.createCell(15).setCellValue("2022.bhushan.kor@ves.ac.in");
 				
