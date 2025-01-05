@@ -959,8 +959,8 @@ public class VLab_0304060403_112_Assign20_Bhushan {
                     
 
 					row.createCell(16).setCellValue(Solution);
-		//				  row.createCell(17).setCellValue(" ");
-						row.createCell(18).setCellValue(112);
+					row.createCell(17).setCellValue(imagePath);
+					row.createCell(18).setCellValue(112);
 
 				
 

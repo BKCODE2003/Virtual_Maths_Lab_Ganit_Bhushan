@@ -25,7 +25,7 @@ import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
-public class VLab_0304060403_114_Assign22_Bhushan {
+public class VLab_0304060403_113_Assign21_Bhushan {
 
 	public static int gcd(int a, int b) {
         if (b==0) return a;
@@ -110,7 +110,7 @@ public class VLab_0304060403_114_Assign22_Bhushan {
         return new int[]{xIntersect,yIntersect,xIntersect1,yIntersect1,newX1,newY1,newX2,newY2};
     }
 	public static void main(String args[]) throws IOException,FileNotFoundException{
-		String filename = "D:/excel files/VLab_0304060403_114_Assign22_Bhushan.xlsx";     //Location where excel file is getting generated
+		String filename = "D:/excel files/VLab_0304060403_113_Assign21_Bhushan.xlsx";     //Location where excel file is getting generated
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		XSSFSheet sheet = workbook.createSheet("Instruction");      //Generating first sheet as Instruction
 		
@@ -296,7 +296,6 @@ public class VLab_0304060403_114_Assign22_Bhushan {
                             }
                         }
 
-
                         // Generate two additional points on the line
                         // my4x4points.add(generatePointOnLine(A1, B1, C1, xIntersect, yIntersect,xIntersect1, yIntersect1));
                         
@@ -338,8 +337,7 @@ public class VLab_0304060403_114_Assign22_Bhushan {
                                                 marker(Plot.Marker.CIRCLE).
                                                 markerColor(Color.RED).
                                                 markerSize(12));
-						
-						plot.save("C:\\Users\\bhush\\Downloads\\Assign22_Images\\GraphCorrect-"+j+"", "png");
+						plot.save("C:\\Users\\bhush\\Downloads\\Assign21_Images\\GraphCorrect-"+j+"", "png");
 					//Images
 
                     Plot plot1 = Plot.plot(Plot.plotOpts().
@@ -369,7 +367,7 @@ public class VLab_0304060403_114_Assign22_Bhushan {
 										markerColor(Color.RED).
 										markerSize(5));
 
-					plot1.save("C:\\Users\\bhush\\Downloads\\Assign22_Images\\GraphWrong1-"+j+"", "png");
+					plot1.save("C:\\Users\\bhush\\Downloads\\Assign21_Images\\GraphWrong1-"+j+"", "png");
 
                     
                     Plot plot2 = Plot.plot(Plot.plotOpts().
@@ -399,7 +397,7 @@ public class VLab_0304060403_114_Assign22_Bhushan {
                                             markerColor(Color.RED).
                                             markerSize(5));
 
-                    plot2.save("C:\\Users\\bhush\\Downloads\\Assign22_Images\\GraphWrong2-"+j+"", "png");
+                    plot2.save("C:\\Users\\bhush\\Downloads\\Assign21_Images\\GraphWrong2-"+j+"", "png");
 
                     Plot plot3 = Plot.plot(Plot.plotOpts().
                                         width(800).
@@ -428,13 +426,13 @@ public class VLab_0304060403_114_Assign22_Bhushan {
                                                 markerColor(Color.RED).
                                                 markerSize(5));
 
-                    plot3.save("C:\\Users\\bhush\\Downloads\\Assign22_Images\\GraphWrong3-"+j+"", "png");
+                    plot3.save("C:\\Users\\bhush\\Downloads\\Assign21_Images\\GraphWrong3-"+j+"", "png");
 
 
-					String imagePath = "C:\\Users\\bhush\\Downloads\\Assign22_Images\\GraphCorrect-"+j+".png";
-                    String imagePath1 = "C:\\Users\\bhush\\Downloads\\Assign22_Images\\GraphWrong1-"+j+".png";
-                    String imagePath2 = "C:\\Users\\bhush\\Downloads\\Assign22_Images\\GraphWrong2-"+j+".png";
-                    String imagePath3 = "C:\\Users\\bhush\\Downloads\\Assign22_Images\\GraphWrong3-"+j+".png";
+					String imagePath = "C:\\Users\\bhush\\Downloads\\Assign21_Images\\GraphCorrect-"+j+".png";
+                    String imagePath1 = "C:\\Users\\bhush\\Downloads\\Assign21_Images\\GraphWrong1-"+j+".png";
+                    String imagePath2 = "C:\\Users\\bhush\\Downloads\\Assign21_Images\\GraphWrong2-"+j+".png";
+                    String imagePath3 = "C:\\Users\\bhush\\Downloads\\Assign21_Images\\GraphWrong3-"+j+".png";
 					// int rowNumber = j; 
 					// int columnNumber = 6; 
 
@@ -447,9 +445,12 @@ public class VLab_0304060403_114_Assign22_Bhushan {
                     
 					
 
+
+					
+
 					String Que1,Que2,Correct_ans,wrong_ans,wrong_ans1,wrong_ans2,Solu,Solu1;
-                    Que1="For simultaneous equations $"+ourLines.get(0)+"$ and $"+ourLines.get(1)+"$, following graphs are given. From them, find out the correct graphical representation for the given equations and therefrom determine the point of intersection of these two graphs. <br>";
-                    Que2="#$"+ourLines.get(0)+"$ आणि $"+ourLines.get(1)+"$, या दोन एकसामायिक रेषीय समीकरणांसाठीचे आलेख खाली दिलेले आहेत. त्यातील बरोबर आलेख शोधून त्या वरून या समीकरणांच्या आलेखांचा छेदन बिंदू कोणता आहे ते ठरवा. <br>";
+                    Que1="For the simultaneous linear equations in two variables, $"+ourLines.get(0)+", "+ourLines.get(1)+"$ the graphs are drawn. Identify the correct graph from the given options and therefrom find the soluiton for these equations. <br>";
+                    Que2="#$"+ourLines.get(0)+", "+ourLines.get(1)+"$ या दोन एकसामायिक रेषीय समीकरणांसाठीचे आलेख खाली दिलेले आहेत. दिलेल्या पर्यायातून त्यातील योग्य आलेख शोधून त्या वरून या समीकरणांचे समाधान करणारी क्रमित जोडी (उकल) कोणती आहे ते ठरवा. <br>";
 
 					String Question=""+Que1+""+Que2+"";
 
@@ -479,21 +480,36 @@ public class VLab_0304060403_114_Assign22_Bhushan {
                     int randomNumber=(int)(Math.random()*4);
 					char choiceG = 'A';
                     char randomAnswer=(char)(choiceG+randomNumber);
-					// Solu="Answer : $"+randomAnswer+"$ and $("+pI1+","+pI2+")$ <br>"+
-					// 		"In graphical method of finding the solution of simultaneous linear equations, we plot the graphs of both equations. The coordinates of the point of intersection of these graphs will be the solution for given simultaneous linear equations. <br>"+
-					// 		"But, we are given with four different combinations of the graphs. So, our first job is to identify that combination, which represents the correct graphs. <br>"+
-					// 		"Therefore we will find out a set of ordered pairs (points), which satisfied the given set of equations. <br>"+
-					// 		"Accordingly <br> for equation $"+ourLines.get(0)+"$, they are $"+P1list+"$ and <br>"+
-					// 		"For equation  $"+ourLines.get(1)+"$, they are $"+P2list+"$ etc. <br>"+
-					// 		"By inspection, we can identify that option $"+randomAnswer+"$ represents the correct graph.<br>"+
-					// 		"Now by observing graphs in correct option $"+randomAnswer+"$, we can observe that, $x="+pI1+",\\ y="+pI2+"$ is the point of intersection for this graph. <br> $\\therefore$ ordered pair $("+pI1+","+pI2+")$ is the point of intersection of the graphs of given simultaneous linear equations, is the answer. <br>";
+					// Solu="Answer : $"+randomAnswer+"$ and $("+checkIx+","+checkIy+")$ <br>"+
+					// 		"In graphical method of finding the solution of simultaneous linear equations, we plot the graphs of both equations on same graphpaper. We know that the coordinates of the point of intersection of these graphs will be the solution for given simultaneous linear equations. <br>"+
+					// 		"But, we are provided with four different combinations of the graphs.<br> Therefore, we need to identify the combination, which represents the correct graphs for the given simultaneous linear equations. <br>"+
+					// 		"For this, we need to find out a set of ordered pairs (points), which satisfies the given equations. <br>"+
+					// 		"Accordingly for $"+ourLines.get(0)+"$, the set of ordered pairs is $"+P1list+"$ and <br>"+
+					// 		"for $"+ourLines.get(1)+"$, the set of ordered pairs is $"+P2list+"$ etc. <br>"+
+					// 		"By inspection, we can identify that option $"+randomAnswer+"$ represents the correct graph. <br>"+
+					// 		"In all other options, either for both graphs or for one of the graphs, condition is not satisfied. <br> Now by observing graphs in correct option $"+randomAnswer+"$, we can observe that, $x="+pI1+",\\ y="+pI2+"$ is the point of intersection for this graph. <br> $\\therefore$ ordered pair $("+pI1+","+pI2+")$ is the solution of the given simultaneous linear equations, is the answer. <br>";
                    
-					// Solu1="#उत्तर : $"+randomAnswer+"$ आणि $("+pI1+","+pI2+")$ <br>"+
-					// 		"एकसामायिक रेषीय समीकरणासाठीचे समाधान शोधण्याच्या आलेख पद्धतीत आपण प्रथम दिलेल्या समीकरणांसाठी आलेख काढतो. त्या आलेखांच्या छेदन बिंदूचे (क्रमित जोडीचे) निर्देशांक म्हणजेच एकसामायिक रेषीय समीकरणासाठीचे समाधान असते. <br>"+
+					// Solu1="#उत्तर : $"+randomAnswer+"$ आणि $("+checkIx+","+checkIy+")$ <br>"+
+					// 		"एकसामायिक रेषीय समीकरणासाठीचे समाधान शोधण्याच्या आलेख पद्धतीत आपण प्रथम दिलेल्या समीकरणांसाठी आलेख काढतो. त्या आलेखांच्या छेदन बिंदूचे (क्रमित जोडीचे) निर्देशांक म्हणजेच एकसामायिक रेषीय समीकरणासाठीचे समाधान (उकल) असते. <br>"+
 					// 		"परंतु आपल्याला येथे चार आलेख दिलेले आहेत. म्हणून आपल्याला आधी यातला असा पर्याय शोधायला हवा जो दिलेल्या समीकरणांसाठी बरोबर आलेख आहे. <br>या साठी आपण दिलेली समीकरणांचे समाधान करणाऱ्या क्रमित जोड्या शोधू. <br>"+
 					// 		"त्या नुसार<br> $"+ourLines.get(0)+"$, या समीकरणासाठी<br> $"+P1list+"$ अशा क्रमित जोड्या मिळतात आणि <br>"+
-					// 		"$"+ourLines.get(1)+"$ या समीकरणासाठी<br> $"+P2list+"$ अशा क्रमित जोड्या मिळतात. <br>तपासणी पद्धतीने आपल्याला  $"+randomAnswer+"$ हा पर्याय बरोबर असल्याचे कळते. <br>आता $"+randomAnswer+"$ या आलेखाचे निरीक्षण करून, त्याच्या छेदन बिंदूचे निर्देशांक $x="+pI1+",\\ y="+pI2+"$ आहेत हे कळते. <br> $\\therefore$ क्रमित जोडी $("+pI1+","+pI2+")$ ही दिलेल्या समीकरणांच्या आलेखांचा छेदन बिंदू आहे हे उत्तर. <br>";
+					// 		"$"+ourLines.get(1)+"$ या समीकरणासाठी<br> $"+P2list+"$ अशा क्रमित जोड्या मिळतात. <br>तपासणी पद्धतीने आपल्याला  $"+randomAnswer+"$ हा पर्याय बरोबर असल्याचे कळते. <br>बाकी सर्व पर्यायात किमान एक तरी आलेख असा आहे जो दिलेल्या पैकी कोणत्या तरी एका किंवा दोन्ही समीकरणा साठी योग्य नाही. <br>आता $"+randomAnswer+"$ या आलेखाचे निरीक्षण करून, त्याच्या छेदन बिंदूचे निर्देशांक $x="+pI1+",\\ y="+pI2+"$ आहेत हे कळते. <br> $\\therefore$ छेदन बिंदू (क्रमित जोडी) $("+pI1+","+pI2+")$ ही दिलेल्या समीकरणांची उकल आहे हे उत्तर. <br>";
 					
+                    // Solu="Answer : $"+randomAnswer+"$ and $("+checkIx+","+checkIy+")$ <br> " + 
+                    //                             "Let us understand first, that the point of intersection for the correct graphs, will be satisfying the given equations. <br>" +
+                    //                             "The point of intersection of both graphs will be a point lying on both lines simultaneously. <br>Graphs of lines are the graphs for the given equations. <br> Thus the point of intersection will necessarily satisfy the given equations. <br>" + 
+                    //                             "Therefore, we will check, if the point of intersections of all pairs of graphs, satisfies the given equations. <br>" + 
+                    //                             "We will substitute the values of $x$ and $y$ corresponding to each point of intersection in the given pair of equations. <br>If both the equations get satisfied simultaneously, then this is the required graph and the corresponding point of intersection is the required point of intersection. <br>" + 
+                    //                             "Accordingly, the point of intersection corresponding to $"+randomAnswer+"$, satisfies the given equations. <br>and <br>$("+checkIx+","+checkIy+")$ is the required point of intersection is the answer. <br>";
+
+                    // Solu1="#उत्तर : $"+randomAnswer+"$ आणि $("+checkIx+","+checkIy+")$ <br>" +
+                    //         "आपण प्रथम हे लक्षात घेऊ की, योग्य (हव्या असलेल्या) आलेखांचा छेदन बिंदू हा दिलेल्या दोन्ही समीकरणांची उकल असेल म्हणजेच त्यांचे समाधान करेल. <br>" +
+                    //         "दोन्ही समीकरणांच्या आलेखांचा छेदन बिंदू हा त्या दोन्ही आलेखांवर असतोच. <br>" +
+                    //         "म्हणजेच दोन्ही आलेखांचा छेदन बिंदू हा दोन्ही समीकरणांचे समाधान करणारच असेल. <br>" +
+                    //         "म्हणून, आपण प्रत्येक आलेखातील छेदन बिंदू विचारात घेऊ आणि हा छेदन बिंदू दिलेल्या समीकरणांचे समाधान करतो किंवा कसे हे तपासू. <br>" +
+                    //         "या साठी प्रत्येक छेदन बिंदूच्या $x$ आणि $y$ च्या किमती दिलेल्या समीकरणात ठेवू. <br>जर या किमती नुसार दिलेल्या समीकरणांचे समाधान होत असेल तर हा छेदन बिंदू असलेले आलेख म्हणजेच आपल्याला हवा असलेला आलेख असेल. <br>" +
+                    //         "म्हणजेच आपल्याला हवा असलेला आलेख म्हणजे पर्याय $"+randomAnswer+"$ आहे. <br>आणि छेदन बिंदू $("+checkIx+","+checkIy+")$ हा आहे, हे उत्तर. <br>";
+
                     Solu="Answer : $"+randomAnswer+"$ and $("+checkIx+","+checkIy+")$ <br> " + //
                                                 "Let us understand first, that the point of intersection for the correct graphs, will be satisfying the given equations. <br>" +
                                                 "The point of intersection of graphs will be a point lying on both lines simultaneously. <br>Graphs of lines are the graphs for the given equations. <br> Thus the point of intersection will necessarily satisfy the given equations. <br>" + 
@@ -509,6 +525,7 @@ public class VLab_0304060403_114_Assign22_Bhushan {
                             "या साठी प्रत्येक छेदन बिंदूच्या $x$ आणि $y$ च्या किमती दिलेल्या समीकरणात ठेवू. <br>जर या किमती नुसार दिलेल्या समीकरणांचे समाधान होत असेल तर हा छेदन बिंदू असलेला आलेख म्हणजेच आपल्याला हवा असलेला आलेख असेल. <br>" +
                             "म्हणजेच आपल्याला हवा असलेला आलेख म्हणजे पर्याय $"+randomAnswer+"$ आहे. <br>आणि छेदन बिंदू $("+checkIx+","+checkIy+")$ हा आहे, हे उत्तर. <br>";
 
+
 					String Solution = ""+Solu+" "+Solu1+"";	
                     int prevJ=j;
                     if(!uniquePairEquations.add(""+ourLines.get(0)+","+ourLines.get(1)+"")&&!uniquePairEquations.add(""+ourLines.get(1)+","+ourLines.get(0)+"")){
@@ -518,7 +535,7 @@ public class VLab_0304060403_114_Assign22_Bhushan {
 
 					row.createCell(16).setCellValue(Solution);
                     row.createCell(17).setCellValue(imagePath);
-					row.createCell(18).setCellValue(114);
+					row.createCell(18).setCellValue(113);
 
 				
 
