@@ -10,6 +10,27 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class VLab_0304070202_122_Assign30_Bhushan {
+	public static int[] findFactors(int targetProduct, int targetSum) {
+		// Loop through possible values of p
+		for (int p = -Math.abs(targetProduct); p <= Math.abs(targetProduct); p++) {
+			if (p == 0) continue; // Skip division by zero
+	
+			// Calculate q
+			int q = targetProduct / p;
+	
+			// Check if the conditions are met
+			if (p * q == targetProduct && p + q == targetSum) {
+				// Ensure the larger number is first
+				if (p > q) {
+					return new int[] {p, q};
+				} else {
+					return new int[] {q, p};
+				}
+			}
+		}
+		return null; // Return null if no solution is found
+	}
+	
 	public static int gcd(int a, int b) {
         if (b==0) return a;
         return gcd(b,a%b);
@@ -83,9 +104,45 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 			String Correct_ans,wrong_ans,wrong_ans1,wrong_ans2,Que,Que1,Sol,Sol1;
 			int term1=diff*diff-Chr3[nim]*Chr3[nim];
 			int gcd3=gcd(2*div*div,gcd(2*div*diff,Math.abs(term1)));
+			int term2=(2*div*div)/gcd3;
+			int term3=(2*div*diff)/gcd3;
+			int term4=Math.abs(term1)/gcd3;
+			int term4S=term1/gcd3;
+			int [] result=findFactors(term2*term4S,term3);
+			if (result == null) {
+				System.out.println("Error: "+i);
+				i--; // Decrement i to retry the current iteration
+				continue; // Skip to the next iteration
+			}
+			int cf3=gcd(Chr1[nim],Chr2[nim]);
+			int cf4=result[0];
+			int cf5=Math.abs(result[1]);
+			int cf1=gcd(term2,cf4);
+			int cf2=gcd(cf5,term4);
+			
 			
 			Que="";
 			Que1="";
+
+			// Sol="As the measure of base is not given let us assume base to be $"+var1[p]+"$ cm. <br>" +
+			// 					"$\\therefore $ Altitude $="+var1[p]+"+\\dfrac{"+diff+"}{"+div+"}=\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"} $ cm <br>" +
+			// 					"And hypotenuse is given as $\\dfrac{"+Chr3[nim]+"}{"+div+"}$ cm <br>" +
+			// 					"For right angle triangle, by using Pythagorus Theorem, we get<br>" +
+			// 					"Base$^2 +$ Altitude $^2 =$ Hypotenus$^2$<br>" +
+			// 					"$\\therefore "+var1[p]+"^2+(\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"})^2=(\\dfrac{"+Chr3[nim]+"}{"+div+"})^2$ . . . .  by Pythagoras theorem <br>" +
+			// 					"$\\therefore "+div*div+""+var1[p]+"^2+("+div+""+var1[p]+"+"+diff+")^2 ="+Chr3[nim]+"^2$ <br>" +
+			// 					"$\\therefore "+div*div+""+var1[p]+"^2+"+div*div+""+var1[p]+"^2+"+2*div*diff+""+var1[p]+"+"+diff*diff+" = "+Chr3[nim]*Chr3[nim]+"$ <br>" +
+			// 					"$\\therefore "+2*div*div+""+var1[p]+"^2+"+2*div*diff+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+Math.abs(term1)+"=0$ <br>" +
+			// 					"$\\therefore "+(2*div*div)/gcd3+""+var1[p]+"^2+"+(2*div*diff)/gcd3+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+(Math.abs(term1)/gcd3)+"=0$ <br>" +
+			// 					"$\\therefore "+term2+""+var1[p]+"^2 +"+(Chr2[nim]/cf3)+""+var1[p]+"-"+(Chr1[nim]/cf3)+""+var1[p]+"-"+term4+"=0$ <br>" +
+			// 					"$\\therefore "+(cf1==1?"":cf1)+""+var1[p]+"("+term2/cf1+""+var1[p]+"+"+cf4/cf1+")-"+(cf2==1?"":cf2)+"("+term4/cf2+""+var1[p]+"+"+cf5/cf2+")=0$ <br>" +
+			// 					"$\\therefore ("+term2/cf1+""+var1[p]+"+"+cf4/cf1+")("+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+")=0$ <br>" +
+			// 					"$\\therefore "+(term2/cf1)+""+var1[p]+"+"+(cf4/cf1)+"=0$ or $"+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+"=0$ <br>" +
+			// 					"$\\therefore "+var1[p]+"=-\\dfrac {"+cf4/cf1+"}{"+term2/cf1+"}$ or $"+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ <br>" +
+			// 					"But $"+var1[p]+"=-\\dfrac {"+(cf4)/cf1+"}{"+term2/cf1+"}$ is not possible (being length of side of a triangle) <br>" +
+			// 					"$\\therefore "+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ cm is one side and <br>" +
+			// 					"Other side $="+var1[p]+"+\\dfrac {"+diff+"}{"+div+"} = "+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"+\\dfrac {"+diff+"}{"+div+"}=\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm <br>" +
+			// 					"$\\therefore$ two sides of the triangle are $"+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ cm and $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm is the answer. <br>";
 
 			Sol="As the measure of base is not given let us assume base to be $"+var1[p]+"$ cm. <br>" +
 								"$\\therefore $ Altitude $="+var1[p]+"+\\dfrac{"+diff+"}{"+div+"}=\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"} $ cm <br>" +
@@ -93,19 +150,21 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 								"For right angle triangle, by using Pythagorus Theorem, we get<br>" +
 								"Base$^2 +$ Altitude $^2 =$ Hypotenus$^2$<br>" +
 								"$\\therefore "+var1[p]+"^2+(\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"})^2=(\\dfrac{"+Chr3[nim]+"}{"+div+"})^2$ . . . .  by Pythagoras theorem <br>" +
-								"$\\therefore "+div*div+""+var1[p]+"^2+("+div+""+var1[p]+"+"+diff+")^2 ="+Chr3[nim]+"$ <br>" +
+								"$\\therefore "+div*div+""+var1[p]+"^2+("+div+""+var1[p]+"+"+diff+")^2 ="+Chr3[nim]+"^2$ <br>" +
 								"$\\therefore "+div*div+""+var1[p]+"^2+"+div*div+""+var1[p]+"^2+"+2*div*diff+""+var1[p]+"+"+diff*diff+" = "+Chr3[nim]*Chr3[nim]+"$ <br>" +
 								"$\\therefore "+2*div*div+""+var1[p]+"^2+"+2*div*diff+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+Math.abs(term1)+"=0$ <br>" +
 								"$\\therefore "+(2*div*div)/gcd3+""+var1[p]+"^2+"+(2*div*diff)/gcd3+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+(Math.abs(term1)/gcd3)+"=0$ <br>" +
-								"$\\therefore 2"+var1[p]+"^2 -12"+var1[p]+"+9"+var1[p]+"-54=0$ <br>" +
-								"$\\therefore 2"+var1[p]+"("+var1[p]+"-6)+9("+var1[p]+"-6)=0$ <br>" +
-								"$\\therefore ("+var1[p]+"-6)(2"+var1[p]+"+9)=0$ <br>" +
-								"$\\therefore "+var1[p]+"-6=0$ or $2"+var1[p]+"+9=0$ <br>" +
-								"$\\therefore "+var1[p]+"=6$ or $"+var1[p]+"=-\\dfrac {9}{2}$ <br>" +
-								"But $"+var1[p]+"=-\\dfrac {9}{2}$ is not possible (being length of side of a triangle) <br>" +
-								"$\\therefore "+var1[p]+"=6$ cm is one side and <br>" +
-								"Other side $="+var1[p]+"-\\dfrac {3}{2} = 6-\\dfrac {3}{2}=\\dfrac {9}{2}$ cm <br>" +
-								"$\\therefore$ two sides of the triangle are $6$ cm and $\\dfrac {9}{2}$ cm is the answer. <br>";
+								"$\\therefore "+(term2==1?"":""+term2+"")+""+var1[p]+"^2 +"+(result[0]==1?"":""+result[0]+"")+""+var1[p]+"-"+(Math.abs(result[1])==1?"":""+Math.abs(result[1])+"")+""+var1[p]+"-"+term4+"=0$ <br>" +
+								"$\\therefore "+(cf1==1?"":cf1)+""+var1[p]+"("+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+cf4/cf1+")-"+(cf2==1?"":cf2)+"("+(cf5/cf2==1?"":""+cf5/cf2+"")+""+var1[p]+"+"+term4/cf2+")=0$ <br>" +
+								"$\\therefore ("+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+cf4/cf1+")("+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+")=0$ <br>" +
+								"$\\therefore "+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+(cf4/cf1)+"=0$ or $"+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+"=0$ <br>" +
+								"$\\therefore "+var1[p]+"="+(term2/cf1==1?"-"+((cf4)/cf1)+"":"-\\dfrac {"+(cf4)/cf1+"}{"+term2/cf1+"}")+"$ or $"+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ <br>" +
+								"But $"+var1[p]+"="+(term2/cf1==1?"-"+((cf4)/cf1)+"":"-\\dfrac {"+(cf4)/cf1+"}{"+term2/cf1+"}")+"$ is not possible (being length of side of a triangle) <br>" +
+								"$\\therefore "+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ cm is one side and <br>" +
+								"Other side $="+var1[p]+"+\\dfrac {"+diff+"}{"+div+"} = "+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"+\\dfrac {"+diff+"}{"+div+"}=\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm <br>" +
+								"$\\therefore$ two sides of the triangle are $"+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ cm and $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm is the answer. <br>";
+
+								
 
 			Sol1="#पायाची किंमत दिलेली नसल्यामुळे आपण पाया $"+var1[p]+"$ सेंमी आहे असे मानू. <br>" +
 								"$\\therefore $ उंची $="+var1[p]+"-\\dfrac{3}{2}=\\dfrac {2"+var1[p]+"-3}{2} $ सेंमी <br>" +
