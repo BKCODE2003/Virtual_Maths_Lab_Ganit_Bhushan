@@ -92,7 +92,7 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 
 			int p=(int)(Math.random()*24);
 			int nim=(int)(Math.random()*10);
-			int div=(int)(Math.random()*9)+1;
+			int div=(int)(Math.random()*8)+2;
 
 			while(isInUse(nim,div,p)){
 				p=(int)(Math.random()*24);
@@ -206,8 +206,8 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 			row.createCell(9).setCellValue(wrong_ans);
 			row.createCell(10).setCellValue(wrong_ans1);
 			row.createCell(11).setCellValue(wrong_ans2);
-			row.createCell(12).setCellValue(90);
-			row.createCell(13).setCellValue(3);
+			row.createCell(12).setCellValue(420);
+			row.createCell(13).setCellValue(5);
 			//				  row.createCell(14).setCellValue(" ");
 			row.createCell(15).setCellValue("2022.bhushan.kor@ves.ac.in");
 				
