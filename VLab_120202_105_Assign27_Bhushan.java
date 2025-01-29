@@ -77,7 +77,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 			}
 
 			
-			int ch=2;
+			int ch=(int)(Math.random()*15+1);
 			String setString="";
 
 			switch (ch) {
