@@ -119,11 +119,13 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 			int cf5=Math.abs(result[1]);
 			int cf1=gcd(term2,cf4);
 			int cf2=gcd(cf5,term4);
+			int ans1gcd=gcd(cf2,cf1);
+			int ans2gcd=gcd(Chr2[nim],div);
 			
-			
-			Que="The altitude of a right triangle is $\\dfrac{"+diff+"}{"+div+"}$ cm more than its base. If the hypotenuse is $\\dfrac{"+Chr3[nim]+"}{"+div+"}$ cm, find the other two sides using quadratic equation.<br>";
+
+			Que="The altitude of a right triangle is $\\dfrac{"+diff+"}{"+div+"}$ cm more than its base. If the hypotenuse is $\\dfrac{"+Chr3[nim]+"}{"+div+"}$ cm, find the other two sides of the triangle using quadratic equation method. <br>";
 								
-			Que1="#एका काटकोन त्रिकोणाची उंची पायापेक्षा $\\dfrac{"+diff+"}{"+div+"}$ सेंमी ने जास्त आहे. जर त्या त्रिकोणाचा कर्ण $\\dfrac{"+Chr3[nim]+"}{"+div+"}$ असेल तर त्या त्रिकोणाच्या बाकीच्या दोन बाजू वर्ग समीकरण पद्धत वापरून शोधा.<br>";
+			Que1="#एका काटकोन त्रिकोणाची उंची पायापेक्षा $\\dfrac{"+diff+"}{"+div+"}$ सेंमी ने जास्त आहे. जर त्या त्रिकोणाचा कर्ण $\\dfrac{"+Chr3[nim]+"}{"+div+"}$ असेल तर त्या त्रिकोणाच्या बाकीच्या दोन बाजू वर्ग समीकरण पद्धत वापरून शोधा. <br>";
 
 			// Sol="As the measure of base is not given let us assume base to be $"+var1[p]+"$ cm. <br>" +
 			// 					"$\\therefore $ Altitude $="+var1[p]+"+\\dfrac{"+diff+"}{"+div+"}=\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"} $ cm <br>" +
@@ -146,12 +148,12 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 			// 					"$\\therefore$ two sides of the triangle are $"+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ cm and $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm is the answer. <br>";
 
 			Sol="As the measure of base is not given let us assume base to be $"+var1[p]+"$ cm. <br>" +
-								"$\\therefore $ Altitude $="+var1[p]+"+\\dfrac{"+diff+"}{"+div+"}=\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"} $ cm <br>" +
+								"$\\therefore $ Altitude $="+var1[p]+"+(\\dfrac{"+diff+"}{"+div+"})=\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"} $ cm <br>" +
 								"And hypotenuse is given as $\\dfrac{"+Chr3[nim]+"}{"+div+"}$ cm <br>" +
-								"For right angle triangle, by using Pythagorus Theorem, we get<br>" +
-								"Base$^2 +$ Altitude $^2 =$ Hypotenus$^2$<br>" +
+								"For right angle triangle, by using Pythagoras Theorem, we get<br>" +
+								"Base$^2 +$ Altitude $^2 =$ Hypotenuse$^2$<br>" +
 								"$\\therefore "+var1[p]+"^2+(\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"})^2=(\\dfrac{"+Chr3[nim]+"}{"+div+"})^2$ . . . .  by Pythagoras theorem <br>" +
-								"$\\therefore "+div*div+""+var1[p]+"^2+("+div+""+var1[p]+"+"+diff+")^2 ="+Chr3[nim]+"^2$ <br>" +
+								"$\\therefore "+div*div+""+var1[p]+"^2+("+div+""+var1[p]+"+"+diff+")^2 ="+Chr3[nim]+"^2. . . .$ by simplifying <br>" +
 								"$\\therefore "+div*div+""+var1[p]+"^2+"+div*div+""+var1[p]+"^2+"+2*div*diff+""+var1[p]+"+"+diff*diff+" = "+Chr3[nim]*Chr3[nim]+"$ <br>" +
 								"$\\therefore "+2*div*div+""+var1[p]+"^2+"+2*div*diff+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+Math.abs(term1)+"=0$ <br>" +
 								"$\\therefore "+(2*div*div)/gcd3+""+var1[p]+"^2+"+(2*div*diff)/gcd3+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+(Math.abs(term1)/gcd3)+"=0$ <br>" +
@@ -161,38 +163,38 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 								"$\\therefore "+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+(cf4/cf1)+"=0$ or $"+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+"=0$ <br>" +
 								"$\\therefore "+var1[p]+"="+(term2/cf1==1?"-"+((cf4)/cf1)+"":"-\\dfrac {"+(cf4)/cf1+"}{"+term2/cf1+"}")+"$ or $"+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ <br>" +
 								"But $"+var1[p]+"="+(term2/cf1==1?"-"+((cf4)/cf1)+"":"-\\dfrac {"+(cf4)/cf1+"}{"+term2/cf1+"}")+"$ is not possible (being length of side of a triangle) <br>" +
-								"$\\therefore "+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ cm is one side and <br>" +
-								"Other side $="+var1[p]+"+\\dfrac {"+diff+"}{"+div+"} = "+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"+\\dfrac {"+diff+"}{"+div+"}=\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm <br>" +
-								"$\\therefore$ two sides of the triangle are $"+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ cm and $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm is the answer. <br>";
+								"$\\therefore "+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+""+(ans1gcd==1?"":((cf1/ans1gcd)==1?"="+(cf2/cf1)+"":"=\\dfrac {"+(cf2/ans1gcd)+"}{"+(cf1/ans1gcd)+"}"))+"$ cm is one side and <br>" +
+								"Other side $="+var1[p]+"+(\\dfrac {"+diff+"}{"+div+"}) = "+(ans1gcd==1?""+(cf1==1?""+(cf2/cf1)+"":"(\\dfrac {"+cf2+"}{"+cf1+"})")+"":((cf1/ans1gcd)==1?"="+(cf2/cf1)+"":"\\dfrac {"+(cf2/ans1gcd)+"}{"+(cf1/ans1gcd)+"}"))+"+(\\dfrac {"+diff+"}{"+div+"})=\\dfrac {"+Chr2[nim]+"}{"+div+"}"+(ans2gcd==1?"":((div/ans2gcd)==1?"="+(Chr2[nim]/div)+"":"=\\dfrac {"+(Chr2[nim]/ans2gcd)+"}{"+(div/ans2gcd)+"}"))+"$ cm <br>" +
+								"$\\therefore$ two sides of the triangle are $"+(ans1gcd==1?""+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"":((cf1/ans1gcd)==1?"="+(cf2/cf1)+"":"\\dfrac {"+(cf2/ans1gcd)+"}{"+(cf1/ans1gcd)+"}"))+"$ cm and $"+(ans2gcd==1?"\\dfrac {"+Chr2[nim]+"}{"+div+"}":((div/ans2gcd)==1?""+(Chr2[nim]/div)+"":"\\dfrac {"+(Chr2[nim]/ans2gcd)+"}{"+(div/ans2gcd)+"}"))+"$ cm is the answer. <br>";
 
 								
 
 			Sol1="#पायाची किंमत दिलेली नसल्यामुळे आपण पाया $"+var1[p]+"$ सेंमी आहे असे मानू. <br>" +
-								"$\\therefore $ उंची $="+var1[p]+"+\\dfrac{"+diff+"}{"+div+"}=\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"} $ सेंमी <br>" +
+								"$\\therefore $ उंची $="+var1[p]+"+(\\dfrac{"+diff+"}{"+div+"})=\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"} $ सेंमी <br>" +
 								"आणि कर्णाची लांबी  $\\dfrac{"+Chr3[nim]+"}{"+div+"}$ सेंमी आहे <br>" +
 								"म्हणून या काटकोन त्रिकोणासाठी पायथागोरसच्या प्रमेया नुसार <br>" +
 								"पाया $^2 +$ उंची $^2 = $ कर्ण $^2$ <br>" +
 								"$\\therefore "+var1[p]+"^2+(\\dfrac {"+div+""+var1[p]+"+"+diff+"}{"+div+"})^2=(\\dfrac{"+Chr3[nim]+"}{"+div+"})^2$ . . . .  पायथागोरस प्रमेया नुसार <br>" +
-								"$\\therefore "+div*div+""+var1[p]+"^2+("+div+""+var1[p]+"+"+diff+")^2 ="+Chr3[nim]+"^2$ <br>" +
+								"$\\therefore "+div*div+""+var1[p]+"^2+("+div+""+var1[p]+"+"+diff+")^2 ="+Chr3[nim]+"^2. . . .$ सरळरूप देवून <br>" +
 								"$\\therefore "+div*div+""+var1[p]+"^2+"+div*div+""+var1[p]+"^2+"+2*div*diff+""+var1[p]+"+"+diff*diff+" = "+Chr3[nim]*Chr3[nim]+"$ <br>" +
 								"$\\therefore "+2*div*div+""+var1[p]+"^2+"+2*div*diff+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+Math.abs(term1)+"=0$ <br>" +
 								"$\\therefore "+(2*div*div)/gcd3+""+var1[p]+"^2+"+(2*div*diff)/gcd3+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+(Math.abs(term1)/gcd3)+"=0$ <br>" +
-								"$\\therefore "+(term2==1?"":""+term2+"")+""+var1[p]+"^2 +"+(result[0]==1?"":""+result[0]+"")+""+var1[p]+"-"+(Math.abs(result[1])==1?"":""+Math.abs(result[1])+"")+""+var1[p]+"-"+term4+"=0$ <br>" +
+								"$\\therefore "+(term2==1?"":""+term2+"")+""+var1[p]+"^2 +"+(result[0]==1?"":""+result[0]+"")+""+var1[p]+"-"+(Math.abs(result[1])==1?"":""+Math.abs(result[1])+"")+""+var1[p]+"-"+term4+"=0$ मध्यपदाची फोड करून <br>" +
 								"$\\therefore "+(cf1==1?"":cf1)+""+var1[p]+"("+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+cf4/cf1+")-"+(cf2==1?"":cf2)+"("+(cf5/cf2==1?"":""+cf5/cf2+"")+""+var1[p]+"+"+term4/cf2+")=0$ <br>" +
 								"$\\therefore ("+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+cf4/cf1+")("+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+")=0$ <br>" +
 								"$\\therefore "+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+(cf4/cf1)+"=0$ or $"+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+"=0$ <br>" +
 								"$\\therefore "+var1[p]+"="+(term2/cf1==1?"-"+((cf4)/cf1)+"":"-\\dfrac {"+(cf4)/cf1+"}{"+term2/cf1+"}")+"$ or $"+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ <br>" +
 								"परंतु $"+var1[p]+"="+(term2/cf1==1?"-"+((cf4)/cf1)+"":"-\\dfrac {"+(cf4)/cf1+"}{"+term2/cf1+"}")+"$ हे शक्य नाही (कारण ती त्रिकोणाची बाजू आहे) <br>" +
-								"$\\therefore "+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ सेंमी ही एक बाजू आहे <br>" +
-								"दुसरी बाजू  $="+var1[p]+"+\\dfrac {"+diff+"}{"+div+"} = "+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"+\\dfrac {"+diff+"}{"+div+"}=\\dfrac {"+Chr2[nim]+"}{"+div+"}$ सेंमी <br>" +
-								"उरलेल्या दोन बाजू ह्या $"+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ सेंमी आणि $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ सेंमी आहेत हे उत्तर. <br>";
+								"$\\therefore "+var1[p]+"="+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+""+(ans1gcd==1?"":((cf1/ans1gcd)==1?"="+(cf2/cf1)+"":"=\\dfrac {"+(cf2/ans1gcd)+"}{"+(cf1/ans1gcd)+"}"))+"$ सेंमी ही एक बाजू आहे <br>" +
+								"दुसरी बाजू  $="+var1[p]+"+(\\dfrac {"+diff+"}{"+div+"}) = "+(ans1gcd==1?""+(cf1==1?""+(cf2/cf1)+"":"(\\dfrac {"+cf2+"}{"+cf1+"})")+"":((cf1/ans1gcd)==1?"="+(cf2/cf1)+"":"\\dfrac {"+(cf2/ans1gcd)+"}{"+(cf1/ans1gcd)+"}"))+"+(\\dfrac {"+diff+"}{"+div+"})=\\dfrac {"+Chr2[nim]+"}{"+div+"}"+(ans2gcd==1?"":((div/ans2gcd)==1?"="+(Chr2[nim]/div)+"":"=\\dfrac {"+(Chr2[nim]/ans2gcd)+"}{"+(div/ans2gcd)+"}"))+"$ सेंमी <br>" +
+								"उरलेल्या दोन बाजू ह्या $"+(ans1gcd==1?""+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"":((cf1/ans1gcd)==1?"="+(cf2/cf1)+"":"\\dfrac {"+(cf2/ans1gcd)+"}{"+(cf1/ans1gcd)+"}"))+"$ सेंमी आणि $"+(ans2gcd==1?"\\dfrac {"+Chr2[nim]+"}{"+div+"}":((div/ans2gcd)==1?""+(Chr2[nim]/div)+"":"\\dfrac {"+(Chr2[nim]/ans2gcd)+"}{"+(div/ans2gcd)+"}"))+"$ सेंमी आहेत हे उत्तर. <br>";
 			
 			
 			String Solution = ""+Sol+" "+Sol1+"";
 			String Question =""+Que+" "+Que1+"";
 			
-			Correct_ans="$"+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ cm and $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm <br> #$"+(cf1==1?""+(cf2/cf1)+"":"\\dfrac {"+cf2+"}{"+cf1+"}")+"$ सेंमी आणि $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ सेंमी";
-			wrong_ans="$\\dfrac {"+cf1+"}{"+cf2+"}$ cm and $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ cm <br> #$\\dfrac {"+cf1+"}{"+cf2+"}$ सेंमी आणि $\\dfrac {"+Chr2[nim]+"}{"+div+"}$ सेंमी";
+			Correct_ans="$"+(ans1gcd==1?""+(cf1==1?""+(cf2/cf1)+"":"(\\dfrac {"+cf2+"}{"+cf1+"})")+"":((cf1/ans1gcd)==1?"="+(cf2/cf1)+"":"\\dfrac {"+(cf2/ans1gcd)+"}{"+(cf1/ans1gcd)+"}"))+"$ cm and $"+(ans2gcd==1?"\\dfrac {"+Chr2[nim]+"}{"+div+"}":((div/ans2gcd)==1?""+(Chr2[nim]/div)+"":"\\dfrac {"+(Chr2[nim]/ans2gcd)+"}{"+(div/ans2gcd)+"}"))+"$ cm <br> #$"+(ans1gcd==1?""+(cf1==1?""+(cf2/cf1)+"":"(\\dfrac {"+cf2+"}{"+cf1+"})")+"":((cf1/ans1gcd)==1?"="+(cf2/cf1)+"":"\\dfrac {"+(cf2/ans1gcd)+"}{"+(cf1/ans1gcd)+"}"))+"$ सेंमी आणि $"+(ans2gcd==1?"\\dfrac {"+Chr2[nim]+"}{"+div+"}":((div/ans2gcd)==1?""+(Chr2[nim]/div)+"":"\\dfrac {"+(Chr2[nim]/ans2gcd)+"}{"+(div/ans2gcd)+"}"))+"$ सेंमी";
+			wrong_ans="$\\dfrac {"+cf1+"}{"+cf2+"}$ cm and $"+(ans2gcd==1?"\\dfrac {"+Chr2[nim]+"}{"+div+"}":((div/ans2gcd)==1?""+(Chr2[nim]/div)+"":"\\dfrac {"+(Chr2[nim]/ans2gcd)+"}{"+(div/ans2gcd)+"}"))+"$ cm <br> #$\\dfrac {"+cf1+"}{"+cf2+"}$ सेंमी आणि $"+(ans2gcd==1?"\\dfrac {"+Chr2[nim]+"}{"+div+"}":((div/ans2gcd)==1?""+(Chr2[nim]/div)+"":"\\dfrac {"+(Chr2[nim]/ans2gcd)+"}{"+(div/ans2gcd)+"}"))+"$ सेंमी";
 			
 			wrong_ans1="$\\dfrac {"+(Chr1[nim]+5)+"}{"+div+"}$ cm and $\\dfrac {"+(Chr2[nim]+1)+"}{"+div+"}$ cm <br> #$\\dfrac {"+(Chr1[nim]+5)+"}{"+div+"}$ सेंमी आणि $\\dfrac {"+(Chr2[nim]+1)+"}{"+div+"}$ सेंमी";
 			
