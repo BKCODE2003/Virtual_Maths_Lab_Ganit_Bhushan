@@ -47,8 +47,8 @@ public class VLab_120202_105_Assign27_Bhushan {
 			row.createCell(2).setCellValue(1);
 			row.createCell(3).setCellValue("120202");
 
-			char []alphabetCapArray = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-			char []alphabetArray = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'};
+			char []alphabetCapArray = {'A', 'B', 'C', 'D', 'F', 'G', 'H', 'K', 'L', 'M', 'P', 'S', 'T', 'V', 'X', 'Y'};
+			char []alphabetArray = {'a', 'b', 'c', 'd', 'f', 'g', 'h', 'k', 'l', 'm', 'p', 's', 't', 'v', 'x', 'y'};
 
 			String Correct_ans,wrong_ans,wrong_ans1,wrong_ans2,Que,Que1,Sol,Sol1,correct_ans_eng_term,correct_ans_mar_term;
 			
@@ -61,14 +61,18 @@ public class VLab_120202_105_Assign27_Bhushan {
 				
 			correct_ans_eng_term="";
 			correct_ans_mar_term="";
+			Correct_ans="";
+			wrong_ans="";
+			wrong_ans1="";
+			wrong_ans2="";
 
-			int p=(int)(Math.random()*25);
+			int p=(int)(Math.random()*16);
 			int q=1;
-			if(p<=23){
+			if(p<=14){
 				q=p+1;
 			}
 			else{
-				if(p=0){
+				if(p==0){
 					q=1;
 				}
 				else{
@@ -115,7 +119,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all even natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व नैसर्गिक सम संख्या $\\}$ <br>";
-					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व परिपूर्ण वर्ग संख्या $\\}$ <br>";
+					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व पूर्ण वर्ग संख्या $\\}$ <br>";
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all natural numbers divisible by $10$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ अशा सर्व नैसर्गिक संख्या ज्यांना $10$ ने पूर्ण भाग जातो $\\}$ <br>";
 
 				break;
@@ -128,7 +132,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व मूळ संख्या $\\}$ <br>";
-					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व परिपूर्ण वर्ग संख्या $\\}$ <br>";
+					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व पूर्ण वर्ग संख्या $\\}$ <br>";
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all natural numbers divisible by $4$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ अशा सर्व नैसर्गिक संख्या ज्यांना $4$ ने पूर्ण भाग जातो $\\}$ <br>";
 
 				break;
@@ -137,7 +141,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					// All perfect Squares
 					setString="\\{1, 4, 9, 16, ....\\}";
 					correct_ans_eng_term="\\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}";
-					correct_ans_mar_term="\\{"+alphabetArray[p]+" |$ सर्व परिपूर्ण वर्ग संख्या $\\}";
+					correct_ans_mar_term="\\{"+alphabetArray[p]+" |$ सर्व पूर्ण वर्ग संख्या $\\}";
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व मूळ संख्या $\\}$ <br>";
@@ -154,7 +158,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व मूळ संख्या $\\}$ <br>";
-					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व परिपूर्ण वर्ग संख्या $\\}$ <br>";
+					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व पूर्ण वर्ग संख्या $\\}$ <br>";
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व नैसर्गिक संख्या $\\}$ <br>";
 
 				break;
@@ -163,12 +167,12 @@ public class VLab_120202_105_Assign27_Bhushan {
 					// M=n*num
 					int num=(int)(Math.random()*9+2);
 					setString="\\{"+num+", "+(num*2)+", "+(num*3)+", "+(num*4)+", ....\\}";
-					correct_ans_eng_term="\\{"+alphabetArray[p]+" |"+alphabetArray[p]+"="+num5+""+alphabetArray[q]+"$ such that $"+alphabetArray[q]+"\\in N$ \\}";
-					correct_ans_mar_term="\\{"+alphabetArray[p]+" |"+alphabetArray[p]+"="+num5+""+alphabetArray[q]+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_eng_term="\\{"+alphabetArray[p]+" |"+alphabetArray[p]+"="+num+""+alphabetArray[q]+"$ such that $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_mar_term="\\{"+alphabetArray[p]+" |"+alphabetArray[p]+"="+num+""+alphabetArray[q]+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all even natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व नैसर्गिक सम संख्या $\\}$ <br>";
-					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व परिपूर्ण वर्ग संख्या $\\}$ <br>";
+					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व पूर्ण वर्ग संख्या $\\}$ <br>";
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all natural numbers divisible by $100$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ अशा सर्व नैसर्गिक संख्या ज्यांना $100$ ने पूर्ण भाग जातो $\\}$ <br>";
 
 
@@ -217,7 +221,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					// All square of even number
 					setString="\\{4, 16, 36, 64, ....\\}";
 					correct_ans_eng_term="\\{"+alphabetArray[p]+" |$ all even perfect square numbers $\\}";
-					correct_ans_mar_term="\\{"+alphabetArray[p]+" |$ सर्व सम परिपूर्ण वर्ग संख्या $\\}";
+					correct_ans_mar_term="\\{"+alphabetArray[p]+" |$ सर्व सम पूर्ण वर्ग संख्या $\\}";
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व मूळ संख्या $\\}$ <br>";
@@ -230,7 +234,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					// All square of odd numbers
 					setString="\\{1, 9, 25, 49, ....\\}";
 					correct_ans_eng_term="\\{"+alphabetArray[p]+" |$ all odd  perfect square numbers $\\}";
-					correct_ans_mar_term="\\{"+alphabetArray[p]+" |$ सर्व विषम परिपूर्ण वर्ग संख्या $\\}";
+					correct_ans_mar_term="\\{"+alphabetArray[p]+" |$ सर्व विषम पूर्ण वर्ग संख्या $\\}";
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व मूळ संख्या $\\}$ <br>";
@@ -247,7 +251,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व मूळ संख्या $\\}$ <br>";
-					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व परिपूर्ण वर्ग संख्या $\\}$ <br>";
+					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व पूर्ण वर्ग संख्या $\\}$ <br>";
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व नैसर्गिक संख्या $\\}$ <br>";
 
 				break;
@@ -260,7 +264,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व मूळ संख्या $\\}$ <br>";
-					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व परिपूर्ण वर्ग संख्या $\\}$ <br>";
+					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व पूर्ण वर्ग संख्या $\\}$ <br>";
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व नैसर्गिक संख्या $\\}$ <br>";
 
 				break;
@@ -269,12 +273,12 @@ public class VLab_120202_105_Assign27_Bhushan {
 					int num2=(int)(Math.random()*9+2);
 					setString="\\{"+num2+", "+(num2*num2)+", "+(num2*num2*num2)+", "+(num2*num2*num2*num2)+", ....\\}";
 					
-					correct_ans_eng_term="\\{"+alphabetArray[p]+" |"+alphabetArray[p]+"="+num5+"^"+alphabetArray[q]+"$ such that $"+alphabetArray[q]+"\\in N$ \\}";
-					correct_ans_mar_term="\\{"+alphabetArray[p]+" |"+alphabetArray[p]+"="+num5+"^"+alphabetArray[q]+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_eng_term="\\{"+alphabetArray[p]+" |"+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$ such that $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_mar_term="\\{"+alphabetArray[p]+" |"+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all even natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व नैसर्गिक सम संख्या $\\}$ <br>";
-					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व परिपूर्ण वर्ग संख्या $\\}$ <br>";
+					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ सर्व पूर्ण वर्ग संख्या $\\}$ <br>";
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ all natural numbers divisible by $100$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" |$ अशा सर्व नैसर्गिक संख्या ज्यांना $100$ ने पूर्ण भाग जातो $\\}$ <br>";
 
 				break;
@@ -284,11 +288,11 @@ public class VLab_120202_105_Assign27_Bhushan {
 			}
 
 			
-			Que="If set $"+alphabetCapArray[p]+"$ is represented as $"+setString+"$, then which of the following Rule will generate this set? <br>";
+			Que="If set $"+alphabetCapArray[p]+"$ is represented as $"+setString+"$, then which of the following rule will generate this set? <br>";
 			Que1="#जर संच $"+alphabetCapArray[p]+"="+setString+"$, तर खालील पैकी कोणता नियम हा संच दाखवितो? <br>";
 
 			Sol="Ans : $"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$<br>" +
-								"Here the elements in the set are given in list form. Hence the set given is in listing or roster form.<br>We are asked to find out the correct rule, which will generate the given required set.<br>Therefore, we need to find out the set generated from each rule. <br>The generated set which will match with the given set is the rule we are looking for. <br>" +
+								"Here the elements in the set are given in list form. Hence the set given is in listing or roster form.<br>We are asked to find out the correct rule, which will generate the given required set. <br>Therefore, we need to find out the set generated from each rule. <br>The generated set which will match with the given set is the rule we are looking for. <br>" +
 								"By inspection we can find out, that, the rule $"+correct_ans_eng_term+"$ generates the required set as, $"+setString+"$.<br>This set matches with the given set.<br>The sets generated by all other rules don't match with the given set.<br>Hence, $"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ is the correct option, is the answer. <br>";
 			Sol1="#उत्तर : $"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$<br>" + 
 								"येथे संचातील घटक यादी पद्धतीने दिले आहेत. म्हणजेच दिलेला संच यादी पद्धतीने लिहिला आहे. <br>" +
