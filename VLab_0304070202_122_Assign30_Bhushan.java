@@ -161,9 +161,9 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 								"$\\therefore "+var1[p]+"^2+("+((div/nGcd)==1?""+var1[p]+"+"+(diff/div)+"":"\\dfrac {"+(div/nGcd)+""+var1[p]+"+"+(diff/nGcd)+"}{"+(div/nGcd)+"}")+")^2=("+((div/nGcd1)==1?""+(Chr3[nim]/div)+"":"\\dfrac {"+(Chr3[nim]/nGcd1)+"}{"+(div/nGcd1)+"}")+")^2$ . . . .  by Pythagoras theorem <br>" +
 								"$\\therefore "+((div*div)/nGcd3)+""+var1[p]+"^2+("+(div/nGcd==1?"":div/nGcd)+""+var1[p]+"+"+(diff/nGcd)+")^2 ="+(Chr3[nim]/nGcd1)+"^2. . . .$ by simplifying <br>" +
 								"$\\therefore "+((div*div)/nGcd3)+""+var1[p]+"^2+"+(div/nGcd==1?"":(div/nGcd)*(div/nGcd))+""+var1[p]+"^2+"+2*(div/nGcd)*(diff/nGcd)+""+var1[p]+"+"+(diff/nGcd)*(diff/nGcd)+" = "+(Chr3[nim]/nGcd1)*(Chr3[nim]/nGcd1)+"$ <br>" +
-								"$\\therefore "+((div*div)/nGcd3)+((div/nGcd)*(div/nGcd))+""+var1[p]+"^2+"+2*(div/nGcd)*(diff/nGcd)+""+var1[p]+""+(nTerm==Math.abs(nTerm) ? "+":"-")+Math.abs(nTerm)+"=0$ <br>" +
+								"$\\therefore "+(((div*div)/nGcd3)+((div/nGcd)*(div/nGcd)))+""+var1[p]+"^2+"+2*(div/nGcd)*(diff/nGcd)+""+var1[p]+""+(nTerm==Math.abs(nTerm) ? "+":"-")+Math.abs(nTerm)+"=0$ <br>" +
 								"$\\therefore "+(2*div*div)/gcd3+""+var1[p]+"^2+"+(((2*div*diff)/gcd3)==1?"":(2*div*diff)/gcd3)+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+(Math.abs(term1)/gcd3)+"=0$ <br>" +
-								"$\\therefore "+(term2==1?"":""+term2+"")+""+var1[p]+"^2 +"+(result[0]==1?"":""+result[0]+"")+""+var1[p]+"-"+(Math.abs(result[1])==1?"":""+Math.abs(result[1])+"")+""+var1[p]+"-"+term4+"=0$ <br>" +
+								"$\\therefore "+(term2==1?"":""+term2+"")+""+var1[p]+"^2 +"+(result[0]==1?"":""+result[0]+"")+""+var1[p]+"-"+(Math.abs(result[1])==1?"":""+Math.abs(result[1])+"")+""+var1[p]+"-"+term4+"=0 . . . . $ by splitting the middle term <br>" +
 								"$\\therefore "+(cf1==1?"":cf1)+""+var1[p]+"("+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+cf4/cf1+")-"+(cf2==1?"":cf2)+"("+(cf5/cf2==1?"":""+cf5/cf2+"")+""+var1[p]+"+"+term4/cf2+")=0$ <br>" +
 								"$\\therefore ("+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+cf4/cf1+")("+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+")=0$ <br>" +
 								"$\\therefore "+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+(cf4/cf1)+"=0$ or $"+(cf1==1?"":cf1)+""+var1[p]+"-"+(cf2==1?"":cf2)+"=0$ <br>" +
@@ -183,7 +183,7 @@ public class VLab_0304070202_122_Assign30_Bhushan {
 								"$\\therefore "+var1[p]+"^2+("+((div/nGcd)==1?""+var1[p]+"+"+(diff/div)+"":"\\dfrac {"+(div/nGcd)+""+var1[p]+"+"+(diff/nGcd)+"}{"+(div/nGcd)+"}")+")^2=("+((div/nGcd1)==1?""+(Chr3[nim]/div)+"":"\\dfrac {"+(Chr3[nim]/nGcd1)+"}{"+(div/nGcd1)+"}")+")^2$ . . . .  पायथागोरस प्रमेया नुसार <br>" +
 								"$\\therefore "+((div*div)/nGcd3)+""+var1[p]+"^2+("+(div/nGcd==1?"":div/nGcd)+""+var1[p]+"+"+(diff/nGcd)+")^2 ="+(Chr3[nim]/nGcd1)+"^2. . . .$ सरळरूप देवून <br>" +
 								"$\\therefore "+((div*div)/nGcd3)+""+var1[p]+"^2+"+(div/nGcd==1?"":(div/nGcd)*(div/nGcd))+""+var1[p]+"^2+"+2*(div/nGcd)*(diff/nGcd)+""+var1[p]+"+"+(diff/nGcd)*(diff/nGcd)+" = "+(Chr3[nim]/nGcd1)*(Chr3[nim]/nGcd1)+"$ <br>" +
-								"$\\therefore "+((div*div)/nGcd3)+((div/nGcd)*(div/nGcd))+""+var1[p]+"^2+"+2*(div/nGcd)*(diff/nGcd)+""+var1[p]+""+(nTerm==Math.abs(nTerm) ? "+":"-")+Math.abs(nTerm)+"=0$ <br>" +
+								"$\\therefore "+(((div*div)/nGcd3)+((div/nGcd)*(div/nGcd)))+""+var1[p]+"^2+"+2*(div/nGcd)*(diff/nGcd)+""+var1[p]+""+(nTerm==Math.abs(nTerm) ? "+":"-")+Math.abs(nTerm)+"=0$ <br>" +
 								"$\\therefore "+(2*div*div)/gcd3+""+var1[p]+"^2+"+(((2*div*diff)/gcd3)==1?"":(2*div*diff)/gcd3)+""+var1[p]+""+(term1==Math.abs(term1) ? "+":"-")+(Math.abs(term1)/gcd3)+"=0$ <br>" +
 								"$\\therefore "+(term2==1?"":""+term2+"")+""+var1[p]+"^2 +"+(result[0]==1?"":""+result[0]+"")+""+var1[p]+"-"+(Math.abs(result[1])==1?"":""+Math.abs(result[1])+"")+""+var1[p]+"-"+term4+"=0$ मध्यपदाची फोड करून <br>" +
 								"$\\therefore "+(cf1==1?"":cf1)+""+var1[p]+"("+(term2/cf1==1?"":""+term2/cf1+"")+""+var1[p]+"+"+cf4/cf1+")-"+(cf2==1?"":cf2)+"("+(cf5/cf2==1?"":""+cf5/cf2+"")+""+var1[p]+"+"+term4/cf2+")=0$ <br>" +
