@@ -119,7 +119,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					if(itr3==0){
 						wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all whole numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व पूर्ण संख्या $\\}$ <br>";
 					}else{
-						wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+						wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 					}
 
 				break;
@@ -149,7 +149,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					if(itr3==0){
 						wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all whole numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व पूर्ण संख्या $\\}$ <br>";
 					}else{
-						wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+						wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 					}
 				break;
 
@@ -197,7 +197,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					else if(itr2==1){
 						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive odd cube numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व विषम धन घन संख्या $\\}$ <br>";
 					}else{
-						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 					}
 					if(itr1==0)
 					{wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all even natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व नैसर्गिक सम संख्या $\\}$ <br>";
@@ -226,7 +226,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					else if(itr2==1){
 						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive odd cube numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व विषम धन घन संख्या $\\}$ <br>";
 					}else{
-						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 					}
 					if(itr1==0)
 					{wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all even natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व नैसर्गिक सम संख्या $\\}$ <br>";
@@ -242,11 +242,11 @@ public class VLab_120202_105_Assign27_Bhushan {
 					// M=n*num
 					int num=(int)(Math.random()*9+2);
 					setString="\\{"+num+", "+(num*2)+", "+(num*3)+", "+(num*4)+", ....\\}";
-					correct_ans_eng_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num+""+alphabetArray[q]+"$, where $"+alphabetArray[q]+"\\in N$ $\\}";
-					correct_ans_mar_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num+""+alphabetArray[q]+"$, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_eng_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num+""+alphabetArray[q]+"\\ $, where $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_mar_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num+""+alphabetArray[q]+"\\ $, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
 
-					correct_ans_eng_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num+""+alphabetArray[q]+"$, where $"+alphabetArray[q]+"\\in N$ $\\}";
-					correct_ans_mar_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num+""+alphabetArray[q]+"$, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_eng_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num+""+alphabetArray[q]+"\\ $, where $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_mar_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num+""+alphabetArray[q]+"\\ $, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					if(itr1==0)
@@ -264,7 +264,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					else if(itr2==1){
 						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive cube numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व धन घन संख्या $\\}$ <br>";
 					}else{
-						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 					}
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all natural numbers divisible by $"+((num*2)+1)+"$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ अशा सर्व नैसर्गिक संख्या ज्यांना $"+((num*2)+1)+"$ ने पूर्ण भाग जातो $\\}$ <br>";
 
@@ -284,7 +284,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all natural numbers divisible by $"+num5+"$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ अशा सर्व नैसर्गिक संख्या ज्यांना $"+num5+"$ ने पूर्ण भाग जातो $\\}$ <br>";
 					wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all even numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व सम संख्या $\\}$ <br>";
-					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num5+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num5+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num5+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num5+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 
 				break;
 
@@ -306,7 +306,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					else if(itr2==0){
 						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive cube numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व धन घन संख्या $\\}$ <br>";
 					}else{
-						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 					}
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व मूळ संख्या $\\}$ <br>";
 
@@ -417,7 +417,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					else if(itr2==1){
 						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive cube numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व धन घन संख्या $\\}$ <br>";
 					}else{
-						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 					}						
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all whole numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व पूर्ण संख्या $\\}$ <br>";
 
@@ -442,7 +442,7 @@ public class VLab_120202_105_Assign27_Bhushan {
 					else if(itr2==1){
 						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive cube numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व धन घन संख्या $\\}$ <br>";
 					}else{
-						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"$ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
+						wrong_ans1="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ where $"+alphabetArray[q]+"\\in N$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+itrnum1+""+alphabetArray[q]+"+"+itrnum2+"\\ $ ज्यात $"+alphabetArray[q]+"\\in N$ $\\}$ <br>";
 					}					
 					wrong_ans2="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all natural numbers divisible by $"+itrnum1+"$ $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ अशा सर्व नैसर्गिक संख्या ज्यांना $"+itrnum1+"$ ने पूर्ण भाग जातो $\\}$ <br>";
 
@@ -478,8 +478,8 @@ public class VLab_120202_105_Assign27_Bhushan {
 			row.createCell(9).setCellValue(wrong_ans);
 			row.createCell(10).setCellValue(wrong_ans1);
 			row.createCell(11).setCellValue(wrong_ans2);
-			row.createCell(12).setCellValue(60);
-			row.createCell(13).setCellValue(1);
+			row.createCell(12).setCellValue(120);
+			row.createCell(13).setCellValue(2);
 			//				  row.createCell(14).setCellValue(" ");
 			row.createCell(15).setCellValue("2022.bhushan.kor@ves.ac.in");
 				
