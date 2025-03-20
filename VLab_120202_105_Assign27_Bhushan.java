@@ -92,7 +92,16 @@ public class VLab_120202_105_Assign27_Bhushan {
 			int itrnum1=(int)Math.random()*8+2;
 			int itrnum2=(int)Math.random()*10+1;
 			String setString="";
+			String Wrongarr []={"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all odd natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व नैसर्गिक विषम संख्या $\\}$ <br>",
+		"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व नैसर्गिक संख्या $\\}$ <br>",
+		"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व मूळ संख्या $\\}$ <br>",
+		"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all perfect square numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व पूर्ण वर्ग संख्या $\\}$ <br>",
+		"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all whole numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व पूर्ण संख्या $\\}$ <br>",
+		"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all even natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व नैसर्गिक सम संख्या $\\}$ <br>",
+		"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive cube numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व धन घन संख्या $\\}$ <br>",
+		
 
+	};
 			switch (ch) {
 				case 1:
 					// All Even Natural Numbers 
@@ -360,8 +369,8 @@ public class VLab_120202_105_Assign27_Bhushan {
 					correct_ans_eng_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all odd perfect square numbers $\\}";
 					correct_ans_mar_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व विषम पूर्ण वर्ग संख्या $\\}";
 
-					correct_ans_eng_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"=(2"+alphabetArray[q]+"+1)^2$, where $"+alphabetArray[q]+"\\in N$ $\\}";
-					correct_ans_mar_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"=(2"+alphabetArray[q]+"+1)^2$, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_eng_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"=(2"+alphabetArray[q]+"+1)^2$, where $"+alphabetArray[q]+"\\in W$ $\\}";
+					correct_ans_mar_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"=(2"+alphabetArray[q]+"+1)^2$, ज्यात $"+alphabetArray[q]+"\\in W$ $\\}";
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					if(itr1==0){
@@ -406,8 +415,8 @@ public class VLab_120202_105_Assign27_Bhushan {
 					correct_ans_eng_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive odd cube numbers $\\}";
 					correct_ans_mar_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व विषम धन घन संख्या $\\}";
 
-					correct_ans_eng_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"=(2"+alphabetArray[q]+"+1)^3$, where $"+alphabetArray[q]+"\\in N$ $\\}";
-					correct_ans_mar_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"=(2"+alphabetArray[q]+"+1)^3$, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_eng_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"=(2"+alphabetArray[q]+"+1)^3$, where $"+alphabetArray[q]+"\\in W$ $\\}";
+					correct_ans_mar_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"=(2"+alphabetArray[q]+"+1)^3$, ज्यात $"+alphabetArray[q]+"\\in W$ $\\}";
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
 					wrong_ans="$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all prime numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व मूळ संख्या $\\}$ <br>";
@@ -427,11 +436,11 @@ public class VLab_120202_105_Assign27_Bhushan {
 					int num2=(int)(Math.random()*9+2);
 					setString="\\{"+num2+", "+(num2*num2)+", "+(num2*num2*num2)+", "+(num2*num2*num2*num2)+", ....\\}";
 					
-					correct_ans_eng_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$, where $"+alphabetArray[q]+"\\in N$ $\\}";
-					correct_ans_mar_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_eng_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$, where $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_mar_term="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
 
-					correct_ans_eng_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$, where $"+alphabetArray[q]+"\\in N$ $\\}";
-					correct_ans_mar_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ "+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_eng_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$, where $"+alphabetArray[q]+"\\in N$ $\\}";
+					correct_ans_mar_term1="\\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+"="+num2+"^"+alphabetArray[q]+"$, ज्यात $"+alphabetArray[q]+"\\in N$ $\\}";
 
 
 					Correct_ans="$"+alphabetCapArray[p]+" = "+correct_ans_eng_term+"$ <br> #$"+alphabetCapArray[p]+" = "+correct_ans_mar_term+"$ <br>";
