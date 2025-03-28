@@ -101,13 +101,6 @@ public class VLab_120202_105_Assign27_Bhushan {
 				"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all even natural numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व नैसर्गिक सम संख्या $\\}$ <br>",
 				"$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ all positive cube numbers $\\}$ <br> #$"+alphabetCapArray[p]+" = \\{"+alphabetArray[p]+" \\ | "+alphabetArray[p]+" \\ $ सर्व धन घन संख्या $\\}$ <br>",
 			};
-			if(text_or_exp==0){
-				System.out.println(i+") True :"+text_or_exp);
-
-			}
-			else{
-				System.out.println(i+") False :"+text_or_exp);
-			}
 
 			switch (ch) {
 				case 1:
